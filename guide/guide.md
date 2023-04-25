@@ -99,13 +99,13 @@ Git은 파일의 변경 사항을 크게 3가지로 구분하여 관리합니다
 - Stage Area: 커밋을 하기 위해 `git add` 명령어로 추가한 파일들이 모여있는 공간
 - Repository: 커밋들이 모여있는 저장소
 
-/* 이미지 추가 - Working Directory, Stage Area, Repository*/
+![Working Directory, Stage Area, Repository](https://user-images.githubusercontent.com/79842129/234326215-059e08bb-99d3-41d5-930b-bff63895d69d.svg)
 
 **Working Directory**
 
 작업 폴더로 Git으로 관리할 프로그램의 소스나 파일들이 위치하는 공간입니다. `git init` 명령을 이용해 초기화 작업을 실행하면 Repository가 생성됩니다.
 
-/*Initialize 이미지 추가 */
+![Initialize 이미지](https://user-images.githubusercontent.com/79842129/234326580-ca9ba3b2-e428-431c-aaeb-b8e959eda715.svg)
 
 **Repository**
 
@@ -113,7 +113,7 @@ Git은 파일의 변경 사항을 크게 3가지로 구분하여 관리합니다
 
 Git은 **local Repository**, **remote Repository** 두 종류의 저장소로 구분됩니다.
 
-/* 로컬 저장소와 원격 저장소 이미지 */
+![로컬 저장소와 원격 저장소 이미지](https://user-images.githubusercontent.com/79842129/234327138-cd325688-f492-4a23-939c-8f0e06082679.svg)
 
 - 로컬 저장소(Local Repository)
 
@@ -190,7 +190,7 @@ Git의 최고 장점이라고 평가되는 브랜치는 무엇일까요?
 
 기본적으로 Git은 `main` 브랜치를 생성합니다. 처음 커밋하면 이 `main` 브랜치는 생성된 커밋을 가리킵니다. 이후 커밋이 생성되면 `main` 브랜치는 자동으로 가장 마지막 커밋을 가리킵니다.
 
-/* 브랜치 커밋 히스토리 이미지 추가 */
+![브랜치 커밋 히스토리 이미지 추가](https://user-images.githubusercontent.com/79842129/234327942-1504dd26-f83e-4584-a02a-f0182167b636.svg)
 
 HEAD는 특정 브랜치의 마지막 커밋에 대한 포인터를 말합니다. 이 그림에서는 main 브랜치의 마지막 커밋인 `5f832d`를 가리키겠네요!
 
@@ -204,7 +204,7 @@ HEAD는 특정 브랜치의 마지막 커밋에 대한 포인터를 말합니다
 git branch {생성할 브랜치 이름}
 ```
 
-/* 브랜치 생성 이미지 추가 */
+![브랜치 생성 이미지](https://user-images.githubusercontent.com/79842129/234328417-c6861bb7-8035-4611-a050-c60776ba8bc7.svg)
 
 새로 만든 브랜치도 지금 작업하고 있던 마지막 커밋을 가리키는 것을 확인할 수 있습니다.
 
@@ -214,17 +214,17 @@ git branch {생성할 브랜치 이름}
 
 이제 생성된 브랜치로 이동해볼까요? 
 
-checkout 명령어를 이용해서 현재 작업중인(=HEAD가 가리키는) 브랜치를 이동해봅시다.
+switch 명령어를 이용해서 현재 작업중인(=HEAD가 가리키는) 브랜치를 이동해봅시다.
 
 ```bash
-git checkout {이동할 브랜치 이름}
+git switch {이동할 브랜치 이름}
 ```
 
-/* checkout 브랜치 이미지 추가 */
+![checkout 브랜치 이미지](https://user-images.githubusercontent.com/79842129/234328717-930253fc-5050-475d-8c9c-54bb155efdfd.svg)
 
 
 
-+) `git checkout -b {브랜치 이름}` 명령어를 사용하면, 브랜치를 생성하고 동시에 이동할 수 있답니다.
++) `git switch -b {브랜치 이름}` 명령어를 사용하면, 브랜치를 생성하고 동시에 이동할 수 있답니다.
 
 
 
@@ -236,7 +236,7 @@ git checkout {이동할 브랜치 이름}
 
 이러한 방식으로 작업하면 '작업 단위', 즉 브랜치로 그 작업 기록을 중간 중간 남기게 되므로 문제가 발생했을 때 원인이 되는 작업을 찾고 그에 따른 대책을 쉽게 세울 수 있습니다.
 
-/* 브랜치 필요성 이미지 추가 */
+![브랜치 필요성](https://user-images.githubusercontent.com/79842129/234329319-d880441e-5c2b-4af0-94f8-c87e88b4e9f6.svg)
 
 +) 이처럼 브랜치를 생성할 때 규칙을 만들어 효과적으로 협업하는 방법을 [Git 브랜치 전략](https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-github-flow-git-flow-%F0%9F%93%88-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5)이라고 합니다.
 
