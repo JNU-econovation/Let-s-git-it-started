@@ -143,9 +143,9 @@ $ git switch {이동할_branch_이름}
 마찬가지로 `git status`명령을 사용하시면 이동한 branch 이름을 확인할 수 있습니다.
     
 >    <aside>
->    🔎 <b>git switch -b {이동할 branch 이름}</b>
+>    🔎 <b>git switch -c {이동할 branch 이름}</b>
 >    
->    `git switch -b {이동할 branch 이름}` 사용 시 branch 생성과 동시에 생성한 branch로 이동할 수 있습니다. 
+>    `git switch -c {이동할 branch 이름}` 사용 시 branch 생성과 동시에 생성한 branch로 이동할 수 있습니다. 
     
 >    </aside>
     
@@ -368,7 +368,7 @@ Pull Request(PR)을 통해 자신이 변경한 내용을 동료에게 전달했�
 # Merge
 
 <aside>
-❗ Merge는 5월 6일 금요일날 진행하실 수 있습니다.
+❗ Merge는 5월 5일 금요일날 진행하실 수 있습니다.
 
 </aside>
 

@@ -65,7 +65,7 @@
 	<details>
    	<summary>확인하기</summary>
 		<div markdown="1">
-			<pre>git branch -b 본인의 Github 아이디</pre>
+			<pre>git branch -a 본인의 Github 아이디</pre>
     </div>
 	 </details>
 
