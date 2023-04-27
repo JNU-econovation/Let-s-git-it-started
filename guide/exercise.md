@@ -351,7 +351,7 @@ Pull Request(PR)을 통해 자신이 변경한 내용을 동료에게 전달했�
 </figcaption>
 <br></br>
 
-**1.** 전제적인 Review 코멘트를 작성합니다.
+**1.** 전체적인 Review 코멘트를 작성합니다.
 
 **2.** **Comment, Approve, Request changes** 설정합니다.
 
@@ -377,7 +377,6 @@ Pull Request(PR)을 통해 자신이 변경한 내용을 동료에게 전달했�
 ### 1. Merge할 동료가 6명 이상에게 **Approve**를 받았는지 확인합니다. 
 - Merge할 동료가 6명 이상으로부터 Approve가 채워지지 않았다면 TF팀에게 DM주세요!
 
-    
 
 ### 2. [Merge pull request] 버튼을 클릭하여 Merge합니다.
-    
+
