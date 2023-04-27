@@ -2,9 +2,9 @@
 
 
 <aside>
-🙌 <b>[이론편]</b>(이론편 링크) 잘 확인하고 오셨나요?**
+🙌 <b>[이론편](https://github.com/JNU-econovation/Let-s-git-it-started/blob/docs/guide/guide.md)</b> 잘 확인하고 오셨나요?
 
-이번에는 앞에서 배운 내용을 바탕으로 직접 행사를 참여하는 실습을 진행하려고 합니다. 상세한 설명을 확인하고 싶으신 분들은 [이론편](이론편 링크)을 참고해주세요! 
+이번에는 앞에서 배운 내용을 바탕으로 직접 행사를 참여하는 실습을 진행하려고 합니다. 상세한 설명을 확인하고 싶으신 분들은 [이론편](https://github.com/JNU-econovation/Let-s-git-it-started/blob/docs/guide/guide.md)을 참고해주세요! 
 
 </aside>
 
@@ -125,27 +125,27 @@ main branch에서 나오는 branch를 만들 것이고 생성된 branch 이름�
 <br></br>
 
     
-### 2. **git checkout**
+### 2. **git switch**
     
 
 `git status` 명령어를 통해 현재 상태를 확인하시면 **On branch main**라는 텍스트를 확인할 수 있는데요. 저희는 아직 main branch에 있습니다. 이제 자기소개를 작성하기 위해 방금 생성한 branch로 이동하겠습니다.
 
 ```bash
-$ git checkout {이동할_branch_이름} 
+$ git switch {이동할_branch_이름} 
 ```
 
-![checkout](https://user-images.githubusercontent.com/79842129/229303409-63f85305-b70c-4865-ba1a-ed3d7b50bcd9.png)
+![switch](https://user-images.githubusercontent.com/79842129/234323852-9883246a-3fcb-407a-90e3-80b59142c179.svg)
 <figcaption align = "center">
-<b>그림5</b> checkout을 사용한 모습
+<b>그림5</b> switch을 사용한 모습
 </figcaption>
 <br></br>
 
 마찬가지로 `git status`명령을 사용하시면 이동한 branch 이름을 확인할 수 있습니다.
     
 >    <aside>
->    🔎 <b>git checkout -b {이동할 branch 이름}</b>
+>    🔎 <b>git switch -c {이동할 branch 이름}</b>
 >    
->    `git checkout -b {이동할 branch 이름}` 사용 시 branch 생성과 동시에 생성한 branch로 이동할 수 있습니다. 
+>    `git switch -c {이동할 branch 이름}` 사용 시 branch 생성과 동시에 생성한 branch로 이동할 수 있습니다. 
     
 >    </aside>
     
@@ -351,7 +351,7 @@ Pull Request(PR)을 통해 자신이 변경한 내용을 동료에게 전달했�
 </figcaption>
 <br></br>
 
-**1.** 전제적인 Review 코멘트를 작성합니다.
+**1.** 전체적인 Review 코멘트를 작성합니다.
 
 **2.** **Comment, Approve, Request changes** 설정합니다.
 
@@ -368,7 +368,7 @@ Pull Request(PR)을 통해 자신이 변경한 내용을 동료에게 전달했�
 # Merge
 
 <aside>
-❗ Merge는 5월 6일 금요일날 진행하실 수 있습니다.
+❗ Merge는 5월 5일 금요일날 진행하실 수 있습니다.
 
 </aside>
 
@@ -376,10 +376,7 @@ Pull Request(PR)을 통해 자신이 변경한 내용을 동료에게 전달했�
 
 ### 1. Merge할 동료가 6명 이상에게 **Approve**를 받았는지 확인합니다. 
 - Merge할 동료가 6명 이상으로부터 Approve가 채워지지 않았다면 TF팀에게 DM주세요!
-    
-    ![Untitled](%5B%E1%84%89%E1%85%B5%E1%86%AF%E1%84%89%E1%85%B3%E1%86%B8%5D%20Let's%20git%20it%20started%20%E1%84%89%E1%85%B5%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20dd09d6bb3cea4bba988423bebe3583bd/Untitled%2013.png)
-    
+
 
 ### 2. [Merge pull request] 버튼을 클릭하여 Merge합니다.
-    
-    ![Untitled](%5B%E1%84%89%E1%85%B5%E1%86%AF%E1%84%89%E1%85%B3%E1%86%B8%5D%20Let's%20git%20it%20started%20%E1%84%89%E1%85%B5%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20dd09d6bb3cea4bba988423bebe3583bd/Untitled%2014.png)
+
