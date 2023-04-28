@@ -222,6 +222,8 @@ $ git commit -m "{남길 commit message}"
 
 저는 "add: econo.md" 라는 커밋 메시지와 함께 변경 사항을 기록했습니다. 
 
+<b> 오늘 사용할 커밋 컨벤션을 아래에서 확인해보세요! </b>
+
 <details>
    	<summary>확인하기</summary>
     <ul>
@@ -241,12 +243,14 @@ $ git commit -m "{남길 commit message}"
             refactor: 코드 리팩토링  
         </li>
         <li>
-        test: 테스트 코드 추가, 리팩토링 (프로덕션 코드 변경 없음)  
+            test: 테스트 코드 추가, 리팩토링 (프로덕션 코드 변경 없음)  
         </li>
         <li>
-        chore: 빌드 작업, 패키지 매니저 설정 등의 일상적인 작업 
+            chore: 빌드 작업, 패키지 매니저 설정 등의 일상적인 작업 
         </li>
 </details>
+
+<br></br>
 
 ### 5. **git push**
 
