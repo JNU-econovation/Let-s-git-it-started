@@ -260,7 +260,16 @@ git switch {이동할 브랜치 이름}
 
    - `.git` 디렉토리는 숨겨진 디렉토리입니다. 일반적인 `ls` 명령만으로는 디렉토리가 조회되지 않습니다. 따라서 `ls -al` 을 입력하여 확인 가능합니다.
 
-​		/* 이미지 추가 */
+
+git init을 하기 전 디렉터리 모습입니다.
+​<img width="739" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/daaad882-838b-41cc-b39e-b30d77481d0d">
+
+이후 git init 명령어를 cmd창에 입력해봅시다.
+<img width="568" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/718051f1-777a-4691-a260-6226eacb118a">
+
+이후 아래와 같이 .git 디렉터리가 생성됨을 알 수 있습니다.
+<img width="733" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/7775481b-a13e-47bd-9e54-b1499dab4edd">
+
 
 ### git remote add {등록 이름} {원격 저장소 주소}
 
