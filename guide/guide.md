@@ -260,7 +260,16 @@ git switch {이동할 브랜치 이름}
 
    - `.git` 디렉토리는 숨겨진 디렉토리입니다. 일반적인 `ls` 명령만으로는 디렉토리가 조회되지 않습니다. 따라서 `ls -al` 을 입력하여 확인 가능합니다.
 
-​		/* 이미지 추가 */
+
+git init을 하기 전 디렉터리 모습입니다.
+​<img width="739" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/daaad882-838b-41cc-b39e-b30d77481d0d">
+
+이후 git init 명령어를 cmd창에 입력해봅시다.
+<img width="568" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/718051f1-777a-4691-a260-6226eacb118a">
+
+이후 아래와 같이 .git 디렉터리가 생성됨을 알 수 있습니다.
+<img width="733" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/7775481b-a13e-47bd-9e54-b1499dab4edd">
+
 
 ### git remote add {등록 이름} {원격 저장소 주소}
 
@@ -343,30 +352,33 @@ Staged, Unmodified 등 파일들의 상태(status)를 확인하는 명령어입�
   - **Modified**: 파일이 수정된 상태
   - **Staged**: 스테이징 영역(커밋 직전 저장소)에 올라간 상태
 
+<img width="753" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/47850e2a-5ae7-47f0-be43-95e7645e2b90">
 만약 1) <u>처음 저장소를 clone</u>해오게 되면, 모든 파일은 **Tracked**이면서 **Unmodified** 상태가 됩니다. 이 상태에서 2) <u>어떤 파일을 수정하면</u> 해당 파일은 **Tracked**이면서 **Modified** 상태가 됩니다. 실제로 3) <u>원격 저장소에 변경 내용을 반영하기 위해서</u> 수정한 파일을 **Staged** 상태로 만들고, Staged 상태의 파일을 **commit**해야 합니다.  
 
-/* 이미지 추가 */
-
 > 변경 사항이 없을 경우
-
-/* 이미지 추가*/
+Remote Repository를 Clone한 상황
+<img width="873" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/461598c8-25f4-4a36-b17d-dfffca2e294f">
 
 > 변경 사항이 있을 경우
 
-**git add 진행하지 않은 상태**
-
-Untracked 상태임을 확인할 수 있습니다.
-
-/* 이미지 추가 */
+clone한 local repository에서 새로운 파일을 생성하였습니다.
+이 경우 새로운 파일은 아직 Git이 인식하지 못 하는 파일이기 때문에 Untracked File(추적하지 않는 파일)로 뜹니다.
+<img width="918" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/024e32bb-f0da-4203-9ba0-98b26b5d5f95">
 
 
+> git add를 진행하지 않은 상태
 
-**git add 진행 후**
+[변경 사항이 없을 경우] 카테고리와 다른점을 찾아보셨나요?
+바로, 이번에는 Untracked File이 아니라 **커밋하도록 정하지 않은 변경 사항** 이 뜨는 것을 확인할 수 있습니다.
 
+이 경우는 Tracked File이지만, 변경사항이 존재할 경우 아래와 같은 응답이 발생합니다.
+<img width="589" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/4a58732e-acb1-4f9c-93df-63139dcabe8e">
+
+
+
+> git add를 진행한 상태
 staged(스테이징 됨) 상태가 된 것을 확인할 수 있습니다. 즉 커밋할 준비가 된 상태입니다.
-
-/* 이미지 추가 */
-
+<img width="617" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/f5049b6d-25ee-4507-95d9-63398d9780d6">
 
 
 ### git branch
@@ -378,19 +390,16 @@ staged(스테이징 됨) 상태가 된 것을 확인할 수 있습니다. 즉 �
 ```bash
 git branch {브랜치명}
 ```
-
-/* 이미지 추가 */
-
-
+<img width="1088" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/e225bad2-de88-4aca-8179-dee042771546">
+ 
 
 > 브랜치 확인하기
 
 ```bash
 git branch
 ```
-
-/* 이미지 추가 */
-
+<img width="721" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/5e05c2c4-de77-40e1-bf0d-694caf20545a">
+<img width="338" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/1fecfcdc-3e05-420e-bdd8-828bb6bddbc1">
 
 
 > 브랜치 삭제하기
@@ -398,56 +407,49 @@ git branch
 ```bash
 git branch -d {브랜치명}
 ```
+주의할 점은 현재 삭제할 브랜치에 있으면 안 됩니다.
+<img width="942" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/be2b8c2c-ac59-4734-892a-6b098c37d607">
 
-/* 이미지 추가 */
+삭제할 브랜치가 아닌 다른 브랜치로 이동 후 브랜치를 삭제해야합니다.
+<img width="840" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/a2cc3f5e-ec1e-405b-b988-2dda51da4eb0">
 
-
-
-### git checkout
+### git switch
 
 현재 작업중인 브랜치를 가리키는 포인터를 HEAD라고 합니다. 
-
 작업중인 브랜치에서 다른 브랜치로 이동하려면 HEAD를 이동시키면 됩니다. 
 
 > 브랜치 이동하기
 
 ```bash
-git checkout {브랜치명}
+git switch {브랜치명}
 ```
-
-/* 이미지 추가 */
+<img width="764" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/3b3dc99d-9631-432a-a529-376f5f78dcb3">
 
 기존 main 브랜치에서 /* 변경된 브랜치명*/으로 이동된 것을 확인할 수 있습니다. 
 
-브랜치 이동은 현재 존재하는 브랜치들 중에서 이동할 수 있습니다. 만약 checkout하려는 브랜치가 없다면 이동할 수 없겠죠.
+브랜치 이동은 현재 존재하는 브랜치들 중에서 이동할 수 있습니다. 만약 switch 하려는 브랜치가 없다면 이동할 수 없겠죠.
+<img width="778" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/4d4fff64-1e89-4fbe-b7fe-eefe89a68149">
 
 
-
-> 브랜치 생성하면서 이동하기
-
-```bash
-git checkout -b {브랜치명}
-```
-
-/* 이미지 추가 */
-
-/* 브랜치 이름 */가 생성되고 동시에 이동된 모습을 확인할 수 있습니다.
+> git pull origin {브랜치명}
+remote repo에서 데이터를 가져올 뿐만 아니라(git fetch) 변경된 내용을 local repo의 내용과 병합한다.(git merge)
+<img width="574" alt="image" src="https://github.com/JNU-econovation/gitPractice/assets/88534959/cef0ec2a-c9f3-4397-8eb2-9747a082cd12">
 
 
+> git log
 
-### git pull origin {브랜치명}
+저장소의 커밋 히스토리를 시간순으로 볼 수 있다. 
+<img width="707" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/1642b5cc-335f-4bfc-827f-311de97dd110">
+<img width="829" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/5edb1d85-c78b-414d-8795-bc568b2a6703">
 
-
-
-### git log
-
+<img width="773" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/ae4b50f8-8439-4f5f-a82a-ec0b832b5b3f">
+<img width="961" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/a9b1a7d2-2cfe-4112-ab9b-1f3fa117caad">
 
 
 ### git diff
-
-
-
-### git rm
+해당 명령어를 사용하면 Working Directory와 Staging Area 사이의 차이를 확인하기 위한 명령어
+<img width="697" alt="image" src="https://github.com/JNU-econovation/weekly_presentation/assets/88534959/639c6d63-8637-45c2-abab-f7ca59857907">
+<img width="1222" alt="image" src="https://github.com/JNU-econovation/weekly_presentation/assets/88534959/f12bd52d-787c-4810-bb51-867999a589d0">
 
 
 
