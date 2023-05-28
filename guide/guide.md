@@ -260,7 +260,16 @@ git switch {이동할 브랜치 이름}
 
    - `.git` 디렉토리는 숨겨진 디렉토리입니다. 일반적인 `ls` 명령만으로는 디렉토리가 조회되지 않습니다. 따라서 `ls -al` 을 입력하여 확인 가능합니다.
 
-​		/* 이미지 추가 */
+
+git init을 하기 전 디렉터리 모습입니다.
+​<img width="739" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/daaad882-838b-41cc-b39e-b30d77481d0d">
+
+이후 git init 명령어를 cmd창에 입력해봅시다.
+<img width="568" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/718051f1-777a-4691-a260-6226eacb118a">
+
+이후 아래와 같이 .git 디렉터리가 생성됨을 알 수 있습니다.
+<img width="733" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/7775481b-a13e-47bd-9e54-b1499dab4edd">
+
 
 ### git remote add {등록 이름} {원격 저장소 주소}
 
@@ -343,6 +352,7 @@ Staged, Unmodified 등 파일들의 상태(status)를 확인하는 명령어입�
   - **Modified**: 파일이 수정된 상태
   - **Staged**: 스테이징 영역(커밋 직전 저장소)에 올라간 상태
 
+<img width="753" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/47850e2a-5ae7-47f0-be43-95e7645e2b90">
 만약 1) <u>처음 저장소를 clone</u>해오게 되면, 모든 파일은 **Tracked**이면서 **Unmodified** 상태가 됩니다. 이 상태에서 2) <u>어떤 파일을 수정하면</u> 해당 파일은 **Tracked**이면서 **Modified** 상태가 됩니다. 실제로 3) <u>원격 저장소에 변경 내용을 반영하기 위해서</u> 수정한 파일을 **Staged** 상태로 만들고, Staged 상태의 파일을 **commit**해야 합니다.  
 
 > 변경 사항이 없을 경우
