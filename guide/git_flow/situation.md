@@ -10,8 +10,11 @@ Github에서 master 브랜치의 무결성을 위해 Git flow를 지향합니다
 
 
 ### [요구사항]
+- 각 팀별로 JNU-econovation Organization에 TEAM Repository 생성할 것
 - 소스파일은 md파일 형식
 - Github issue를 활용할 것
 - 각 팀별 Commit Convetion 통일
 - PR명 통일
+- master, develop, feature branch 사용할 것
+- 각 팀별 모든 작업 후 JNU-ecnovation/Let-s-git-it-started에 issues 생성 후 TEAM Repository link 첨부 
 
