@@ -30,7 +30,7 @@
 
 ## [step 3]
 
-1. [git_flow_theory](git_flow_theory.md)를 참고하며 각 스텝마다 md파일을 수정하며 push, pull 합니다.
+1. [git_flow_theory](git_flow_theory.md)를 참고하며 각 스텝마다 md파일의 퀴즈를  풀며 push, pull 합니다.
 
 2. md파일이 잘 수정되고 있는지 알고 싶다면 solution 폴더에서 각 branch별로 노드의 답을 확인할 수 있습니다.
 
