@@ -1,47 +1,53 @@
 # Situation
-여러분 팀은 특정 소프트웨어 개발에 있어 버전 관리를 위해 Git 도입하기로 하였습니다. 
 
-개발을 진행하며 main 브랜치의 무결성을 위해 Git flow를 지향하고, GitHub를 사용하여 개발하기로 했습니다.
+### [step 1]
+1. JNU-econovation Organization에 TEAM Repository 생성합니다.
 
-- main 브랜치의 무결성이란?
+### [step 2]
+1. main branch에 init 폴더에 존재하는 init1.md, init2.md 파일을 commit합니다.
+2. main branch에서 develop branch을 생성합니다.
+    - develop branch에 setting 폴더에 존재하는 setting1.md, setting2.md파일을 copy and paste하여 commit합니다.
+    - 1번 develop branch의 목적은 ‘환경 세팅’입니다.
+    - 환경 세팅이라 함은, 버전, 라이브러리, 프레임워크 셋팅 등이 있겠습니다만, 우리는 md파일로 실습하므로, 문제를 복붙하는 것입니다. (교수님이 1번부터 25번 문제 다 있는지 확인해라~ 하는거랑 비슷함)
 
-    - main에서 오류가 발생하면 큰 문제로 이어질 수 있습니다. 이를 해결하기 위해서 main 브랜치에 merge를 하기 전 다른 브랜치에서 충분히 테스트와 검사를 한 후에 merge하는 전략을 사용해야 합니다.
+### [step 3]
+1. 2번 develop branch에서는 두 개의 feature branch (next feature, future feature) 를 생성합니다. (commit)
+    - feature branch의 목적은 ‘기능 개발’입니다. 여러분이 그냥 main 이나 develop에서 기능개발을 하다가 실수로, 혹은 샷건을 치다가, 아니면 고양이가 키를 잘못 눌러서 전체 코드에 문제가 생기면 대참사입니다. 하지만 기능을 나눠 개발하면 한 가지 기능만 다시 작성하면 되겠죠? (고양이를 안데려오면 될 일입니다.)
+2. 1번 next feature branch 에서는 5문제를 해결합니다. (commit)
+3. 2번 next feature branch 에서는 5문제를 해결합니다. (commit)
+4. 2번 next feature branch 에서 3번 develop branch로 pull request를 보냅시다. (commit)
+    - 그럼 여기선 총 10 문제가 3번 develop branch 에 있겠죠?
 
-[git_flow_theory](git_flow_theory.md)를 참고하며 진행해봅시다.
-
-
-## [step 1]
-
-1. 팀별로 머지요정이 보내준 init.md 파일을 받습니다.
-
-    (git_flow에서도 파일을 받을 수 있습니다.)
-
-2. JNU-econovation Organization에 TEAM Repository 생성합니다.
-
-3. 팀만의 commit convention과 pr명을 만듭니다.
+### [step 4]
+1. 1번 future feature branch 에서는 3문제를 해결합니다. (commit)
+2. 2번 future feature branch 에서는 4문제를 해결합니다. (commit)
+3. 2번 future feature branch 에서 4번 develop branch로 pull request를 보냅시다. (commit)
+    - 그럼 여기선 총 17문제가 4번 develop branch 에 있겠죠?
+4. 4번 develop branch에서 1번 release branch로 pull request를 보냅시다. (commit)
+    - release branch의 목적은 개발된 내용을 배포하기 위해 준비하는 브랜치 입니다. 라고 하면 이해 못하실 거 알고 있습니다. (저도 못했음, 지금도 모름)
+    - 버전, 이름, 변수 등의 소소한 데이터를 수정하거나 (변수를 님들 맘대로 해놓으면, 다른 사람들이 코드보고 이해를 못하겠죠?), 배포 전 사소한 버그를 수정하기 위해 사용하는 브랜치입니다.
+5. 1번 release branch에서 2번 main branch로 pull request를 보냅시다. (commit)
+- 이야 끝났따!!!!!!!!!!!!! 일 줄 알았지만 아닙니다.
     
-    ([이전에 사용한 commit convention](../exercise.md/#4-git-commit))
+    저희는 총 18문제를 드렸는데요?
+    
+    1문제가 없죠?
+    
+    (니들이 그렇게 시켰잖아?) ← 어쩌라구요. 같이 공부합시다.
+    
+- 이렇게 갑작스럽게 이미 배포된 버전에 문제가 발생했을 경우엔 Hotfix 브랜치를 사용합니다.
+    - 왜 develop 안가고 여기서 하냐구요? 님들 develop 브랜치 저거 하나하나 다 들어가서 revert, reset 오지게 쓰시면서 다시 수정해서 배포 가능한 버전 만들거임?
+    - 만들라면 만들겠지만 굉장히 불필요한 리소스가 많이 들어갑니다.
+    - 버그 한개의 수정만을 위한 Hotfix 브랜치를 생성하는 순간, 다음 버전의 배포(업그레이드라던지?)를 위해 개발하던 작업 내용에 방해를 주지 않으므로, 버그 전담팀(이런게 있겠죠 취업하시면?)에서는 Hotfix브랜치에서만 일하고, 나머지 브랜치는 각 팀에서 병렬적으로 일처리가 가능하게 해줍니다.
 
-## [step 2]
+### [step 5]
+1. 2번 main branch에서 1번 hotfix 브랜치를 생성해주고 버그(나머지 문제 하나 남은거)를 해결해줍시다. (commit)
+2. 그럼 이제 다 해결된 1번 hotfix 브랜치에서 3번 main branch로 pull request 를 보냅시다. (commit)
+- 다 해결되었죠? 그럼 이제 git log graph를 살펴봅시다. 상당히 더러운 걸 볼 수 있습니다.
+    
+    브랜치 삭제하시죠
+    
+3. develop, main branch를 제외한 branch들은 삭제해줍시다. (님들 이거 삭제 명령어도 구글링 안하면 진짜 마음아플거같아요 - 이도연)
 
-1. TEAM Repository에 git flow에 필요한 branch들을 생성합니다.
-
-2. main branch에 init.md 파일을 push합니다.
-
-## [step 3]
-
-1. [git_flow_theory](git_flow_theory.md)를 참고하며 각 스텝마다 md파일을 수정하며 push, pull 합니다.
-
-2. md파일이 잘 수정되고 있는지 알고 싶다면 solution 폴더에서 각 branch별로 노드의 답을 확인할 수 있습니다.
-
-## [step 4]
-
-1. step 3를 모두 진행한 후에 main 브랜치의 마지막에 있는 md파일이 모든 이슈를 해결했는지 확인합니다.
-
-2. 해결되었다면 JNU-ecnovation/Let-s-git-it-started에 issues를 생성 후 TEAM Repository link 첨부합니다.
-
-## [step 5]
-
-다른 팀들이 진행한 repository의 commit log를 확인하고 대댓글을 달아봅시다.
-
-
+### [step 6]
+위 5단계를 모두 거친 후 각 팀의 레포지토리 링크를 [이슈로 등록](https://github.com/JNU-econovation/Let-s-git-it-started/issues) 해주세요~

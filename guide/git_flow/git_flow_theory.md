@@ -18,7 +18,7 @@
 * 메인 브랜치 : main, develop
 * 보조 브랜치 : feature, release, hotfix
 
-<img width="506" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/79842129/ea720366-2be3-4b35-a6c9-1b5bfb9bb00d">
+![git-flow 가이드 흐름도](https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/1bb77009-87da-46eb-9527-627763964f46)
 
 
 
