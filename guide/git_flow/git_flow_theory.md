@@ -20,7 +20,7 @@
 
 <img width="636" alt="image" src="https://github.com/JNU-econovatio/Let-s-git-it-started/assets/88534959/c62c07ee-9a42-43b5-b0eb-58e388849c78">
 
-## 메인 브랜치들의 특징
+## 메인 브랜치들의 종류
 ---
 * master : 배포 가능한 상태만을 관리하는 브랜치
 * develop : 다음에 배포할 것을 개발하는 브랜치
@@ -32,7 +32,7 @@
 develop 브랜치는 처음 master 브랜치에서 분기하는 것으로 시작하며 <b>다음 버전 구현이 완료되어 배포를 하고 싶을 때  master로 다시 합치는 방식 </b>으로 운영됩니다.
 
 
-## 보조 브랜치의 특징
+## 보조 브랜치의 종류
 * feature : 기능 구현을 위해 사용하는 브랜치
 * release : 개발된 내용을 배포하기 위해 준비하는 브랜치
 * hotfix : 버그의 빠른 수정을 위해 사용하는 브랜치
