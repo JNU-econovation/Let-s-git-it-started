@@ -18,7 +18,7 @@
 * 메인 브랜치 : master, develop
 * 보조 브랜치 : feature, release, hotfix
 
-<img width="636" alt="image" src="https://github.com/JNU-econovatio/Let-s-git-it-started/assets/88534959/c62c07ee-9a42-43b5-b0eb-58e388849c78">
+<img width="506" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/54f8d158-44be-4a62-91f4-634e521041ce">
 
 ## 메인 브랜치들의 종류
 ---
