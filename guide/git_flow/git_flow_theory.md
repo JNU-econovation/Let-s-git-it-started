@@ -15,10 +15,14 @@
 
 # git-flow
 크게 5개의 브랜치를 운영하며 관리를 합니다.
+
+
 * 메인 브랜치 : main, develop
 * 보조 브랜치 : feature, release, hotfix
 
 <img width="506" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/79842129/ea720366-2be3-4b35-a6c9-1b5bfb9bb00d">
+
+
 
 ## 메인 브랜치들의 종류
 ---
