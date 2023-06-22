@@ -1,4 +1,4 @@
-이번엔 브랜치 전략 중 하나인 git flow에 대해서 알아보겠습니다.
+이번엔 브랜치 전략 중 하나인 git-flow에 대해서 알아보겠습니다.
 
 ### [ 브랜치 전략을 설정하는 이유 ]
 우선 브랜치 전략을 세우는 이유가 무엇일까요?
@@ -7,13 +7,13 @@
 
 브랜치 전략이 없다면 어떤 브랜치에 push 해야 하는지, 또한 어떤 브랜치에서 pull을 해와서 개발을 시작해야 하는지 등부터 많은 혼란을 야기할 것입니다.
 
-가장 널리 사용되는 브랜치 전략은 git-flow, git hub-flow 전략이 있습니다.
+가장 널리 사용되는 브랜치 전략은 git-flow, github-flow 전략이 있습니다.
 
 이번 시간을 통해서 여러분이 브랜치 전략에 대해서 알아보시고, 팀끼리의 브랜치 전략을 세울 수 있는 시간이 되면 좋겠습니다.
 
 오늘 알려드린 git-flow 전략이 팀과는 어울리지 않는 브랜치 전략일 수도 있습니다. git-flow 전략이 무조건 따라야 하는 좋은 전략은 아니니 팀 상황을 고려해서 알맞은 브랜치 전략을 세우는 데 참고하시면 좋겠습니다.
 
-# git flow
+# git-flow
 크게 5개의 브랜치를 운영하며 관리를 한다.
 * 메인 브랜치 : master, develop
 * 보조 브랜치 : feature, release, hotfix
@@ -46,7 +46,7 @@ feature 브랜치는 기능의 구현을 담당한다.
 ex) feature/logi feature/#1(issue 번호)
 <img width="517" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/8e6bfdb7-8f20-44aa-9d8c-4d7c8e121189">
 
-feature 브랜치는 develope 브랜치에서 생성되며, 기능 구현이 완료된 이후에 develope 브랜치로  merge 된다.
+feature 브랜치는 develop 브랜치에서 생성되며, 기능 구현이 완료된 이후에 develop 브랜치로  merge 된다.
 
 또한 merge된 이후에는 해당 feature 브랜치는 삭제된다.
 
