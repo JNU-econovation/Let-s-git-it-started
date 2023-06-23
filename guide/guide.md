@@ -22,7 +22,7 @@
 - [Git 명령어](#Git-명령어)
 - [Git Merge](#Git-Merge)
 - [Git Rebase](#Git-Rebase)
-
+- [Git Branch 전략](#Git-Branch-전략)
 
 
 ## Git/GitHub이란?
@@ -482,3 +482,126 @@ remote repo에서 데이터를 가져올 뿐만 아니라(git fetch) 변경된 �
 그런 다음 "git merge topic"은 토픽 브랜치가 마스터(즉, E)에서 분기된 이후부터 마스터 위에 있는 현재 커밋(C)까지의 변경 내용을 재생하고, 두 부모 커밋의 이름과 변경 내용을 설명하는 사용자의 로그 메시지와 함께 결과를 새 커밋에 기록한다. 작업 전에 ORIG_HEAD는 현재 브랜치(C)의 끝으로 설정된다.
 <img width="279" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/86696759/379c46a5-c0e0-4143-87c3-493dddb915bf">
 두 번째 구문("git merge --abort")은 병합으로 인해 충돌이 발생한 후에만 실행할 수 있다. git merge --abort는 병합 프로세스를 중단하고 병합 전 상태를 재구성하려고 시도한다. 그러나 병합이 시작될 때 커밋되지 않은 변경 사항이 있는 경우(특히 병합이 시작된 후 변경 사항이 추가로 수정된 경우) git merge --abort는 경우에 따라 원래(병합 전) 변경 사항을 재구성할 수 없다.
+
+
+
+## Git Branch 전략
+### 0. git branch 전략이 뭔가요?
+git branch 전략은 여러 개발자가 하나의 저장소를 사용하는 환경에서 저장소를 효과적으로 활용하기 위해 나온 개념입니다.
+
+브랜치 전략이 없다면 어떤 브랜치에 push 해야 하는지, 또한 어떤 브랜치에서 pull을 해와서 개발을 시작해야 하는지 등부터 많은 혼란을 야기할 것입니다.
+
+이 문서에서는 Git Flow, GitHub Flow, GitLab Flow, Fork와 PR의 4가지 전략에 대해서 알아봅니다.
+
+### 1. Git Flow
+git flow 전략에는 항상 유지되는 메인 브랜치들`(master, develop)`과 일정 기간동안만 유지되는 보조 브랜치들`(feature, release, hotfix)`이 있습니다. 보조 브랜치들은 필요할 때마다 생성되고, 역할을 다하면 삭제됩니다. 이 보조 브랜치 덕분에 병렬적인 업무가 가능해집니다.
+
+<p align="center"><img width="700" alt="Git Flow" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/3dc8b3c3-61c2-40de-bc49-5f1a3e0ec5b3"></p>
+
+- master: 제품으로 `출시`될 수 있는 브랜치
+- develop: 다음 출시 버전을 대비하여 `개발`하는 브랜치
+- feature: `기능`을 개발하는 브랜치
+- release: 배포를 위해 master 브랜치로 보내기 전에 먼저 `QA`(품질검사)를 하기 위한 브랜치
+- hotfix: 출시 버전에서 발생한 `버그`를 수정하는 브랜치
+
+각각의 브랜치를 자세히 알아봅시다.
+
+
+**메인 브랜치**
+
+
+<p align="center"><img width="500" alt="메인 브랜치" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/63516254-9b8b-4525-8036-ce0a465970b7"></p>
+
+- main branch에는 **master branch**와 **develop branch**가 있습니다.
+- 처음 master 브랜치에서 분기하는 것으로 시작하며, 다음 버전 구현이 완료되어 배포를 하고 싶을 때 master로 다시 합치는 방식으로 운영됩니다.
+- develop 브랜치는 통합 브랜치의 역할을 하며, 평소에는 이 브랜치를 기반으로 개발을 진행합니다.
+
+  
+
+**보조 브랜치**
+
+1. **Feature 브랜치**
+  
+<p align="center"><img width="500" alt="Feature 브랜치" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/14eb6efa-3b6e-4a10-989c-e2b8d71f6316"></p>
+
+  - 하나의 기능을 개발하기 위한 브랜치입니다. develop 브랜치에서 생성하며, 기능이 개발 완료되면 다시 develop 브랜치로 merge 됩니다.
+  - 브랜치명은 보통 팀 컨벤션을 따릅니다. `ex) feature/login, feature/#1(issue 번호)`
+
+
+
+2. **Release 브랜치**
+
+<p align="center"><img width="500" alt="Release 브랜치" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/c4155bff-df63-4c0a-b326-c771cab7c64b"></p>
+
+  - 소프트웨어 배포를 준비하기 위한 브랜치입니다. 버전 이름을 수정하거나 배포전 사소한 버그를 수정하기 위해 사용됩니다.
+  -  develop 브랜치에서 생성하며, 배포 준비가 완료되었다면 master브랜치에 머지합니다. 이때, master 브랜치에는 태그를 이용하여 버전을 표시합니다. release 브랜치에서 기능을 점검하며 발견한 버그 수정 사항은 develop 브랜치에 대해서도 merge 작업을 수행해줍니다.
+  -  release 브랜치가 배포를 위한 준비를 하는 동안 develop 브랜치는 기능 개발을 지속할 수 있다는 장점이 있습니다.
+  -  네이밍은 주로 `release-1.2, release/1.2` 과 같은 형태로 생성합니다.
+
+
+
+3. **Hotfix 브랜치**
+
+<p align="center"><img width="500" alt="Hotfix 브랜치" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/5438b8fb-d94e-4ff1-a6d6-28c017f6926b"></p>
+
+- 이미 배포된 버전에 수정사항이 생겼을 경우, hotfix 브랜치를 사용하여 문제를 해결합니다.
+- master 브랜치에서 분기하여 hotfix 브랜치를 생성하며, 문제 해결이 완료되면 master과 develop 브랜치에 둘다 머지합니다. 이때 tag를 통해 관련 정보를 기록해 둡니다.
+-  release 브랜치와 마찬가지로 hotfix 브랜치를 따로 운용함으로써, 핫픽스 업무와 관련없는 팀은 병렬적으로 기능 개발을 할 수 있습니다.
+-  네이밍은 보통 `hotfix/v1.0.1` 과 같은 형태로 생성합니다.
+
+
+
+### 2. GitHub Flow
+Git Flow는 명시적으로 버전관리가 필요한 스마트폰 어플리케이션, 오픈소스 라이브러리/프레임워크 등의 프로젝트에 적합합니다.
+**웹 어플리케이션은 특성상 사용자는 항상 최신의 단일 버전**만을 사용합니다. 즉, 여러 버전을 병렬적으로 지원할 필요가 없습니다. 또한 웹 어플리케이션은 하루에 몇번이고 릴리즈될 수 있습니다. 이런 특성을 바탕으로 웹 어플리케이션 개발에는 이제부터 소개할 GitHub flow 를 사용하는 것이 더 나은 방법일 수 있습니다.
+
+<p align="center"><img width="700" alt="GitHub Flow" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/3fd7e770-6063-48cc-b3b0-7a8ce68236f2"></p>
+
+Github Flow는 Git Flow와 다르게 굉장히 간단한 구조이며 Github 환경에서 사용하기 적합한 브랜치 전략이기도 합니다. 또한 수시로 배포가 일어나며, CI와 배포가 자동화되어있는 프로젝트에 유용합니다.
+
+GitHub Flow에서 사용하는 브랜치는 다음과 같습니다.
+
+- **master branch**
+    - 배포를 위한 branch
+    - master 브랜치는 항상 최신 상태며, **stable** 상태로 product에 배포되는 브랜치 입니다.
+        - 즉, master의 **모든 커밋은 언제 배포하든 문제가 없어야 하고 언제든 브랜치를 새로 만들 수 있어야** 합니다. master 브랜치의 모든 커밋은 **빌드가 되고, 테스트를 통과**해야합니다.
+        - 테스트는 로컬에서 하는 것이 아니라 브랜치를 push 하고 Jenkins로 테스트 합니다.
+            
+          *[Jenkins](https://www.jenkins.io/) : 개발 작업 자동화 뿐 아니라 소스 코드 저장소 대한 지속적인 통합과 지속적인 배포 환경을 구축하기 위한 간단한 방법을 제공하는 도구*
+
+- **Topic branch**
+    - **새로운 기능**을 개발할 때에는 **Topic 브랜치**를 master 브랜치로부터 생성합니다. Git Flow의 Feature 브랜치와 동일한 역할을 합니다.
+    - 체계적인 분류 없이 브랜치 하나에 의존하기 때문에 **브랜치 이름을 통해 의도를 명확하게** 드러내는 것이 매우 중요합니다.
+    - 브랜치 명으로는  **`user-content-cache-key`**, **`submodules-init-task`**, **`redis2-transition`** 등이 있습니다.
+    - Topic 브랜치의 커밋은 기능이 완성되지 않았더라도 **꾸준히 Push** 합니다. 노트북 분실, 작업 컴퓨터의 고장등의 위험으로 코드가 유실되는 것을 막아주고, 구성원 모두가 끊임없이 커뮤니케이션 할 수 있게 해줍니다.
+
+### 3. GitLab Flow
+
+<p align="center"><img width="500" alt="GitLab Flow" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/6870bcd3-fd90-4231-990c-f181f75b5900"></p>
+
+GitLab Flow는 GitFlow와 GitHub Flow의 **절충안**으로 등장한 git branch 전략입니다. GitHub Flow와 비교하였을 때 **배포, 릴리즈 등의 조금 복잡한 이슈를 보완**할 수 있어요.
+
+GitLab Flow에서 사용하는 브랜치는 다음과 같습니다.
+
+- **feature 브랜치**  
+GitLab Flow의 **모든 기능 구현**은 feature 브랜치에서 시작합니다. feature 브랜치는 master 브랜치에서 분기하고, 또한 feature 브랜치에서 구현한 기능을 master 브랜치로 merge합니다.
+    
+- **master 브랜치**  
+Git Flow의 develop 브랜치와 동일한 역할을 하는 브랜치입니다. feature 브랜치에서 master 브랜치로 병합된 기능에 대해 **test를 진행**합니다.
+
+- **production 브랜치**  
+Git Flow의 master 브랜치와 동일한 역할을 하는 브랜치입니다. 테스트가 끝난 **기능을 배포**합니다.
+
+- **pre-production 브랜치**  
+master 브랜치와 production 브랜치의 사이에 있는 브랜치입니다. master의 변경 사항을 바로 production에 병합하여 배포하는 대신, **test server에 배포하여 통합 테스트를 진행**하거나 **시간을 두고 반영**하도록 합니다.
+
+### 4. Fork와 Pull Request
+
+<p align="center"><img width="700" alt="Fork와 Pull Request" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/0e3b16c4-b039-4666-bf49-673e8bdaf855"></p>
+
+
+fork와 Pull Request 전략에서는 **브랜치 대신 fork와 Pull Request 기능**을 활용하여 협업합니다.
+
+- fork는 프로젝트 전체를 **나의 원격 Repository로 복제**할 수 있는 기능입니다.
+- Pull Request를 사용하여 **원래 프로젝트 Repository로 merge 요청**을 보낼 수 있습니다. 원래 프로젝트의 관리자는 내가 merge를 요청한 코드를 보고 merge를 허용 여부를 결정합니다.
+- fork와 헷갈릴 수 있는 명령어로 clone이 있습니다. clone은 **특정 원격 repository를 내 노트북에 복사**하여 새로운 로컬 저장소를 만드는 명령어입니다. 반면 fork는 **특정 원격 repository를 나의 원격 repository로 복제**해오는 명령입니다.
