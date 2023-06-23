@@ -29,7 +29,7 @@
 
 위 2개의 브랜치는 항상 남아있습니다.
 
-<img width="315" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/e8b33af9-dc61-4987-bfee-b66f64885401">
+![사진1](https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/08f0472c-a562-4463-9260-87bd30f63ea1)
 
 develop 브랜치는 처음 master 브랜치에서 분기하는 것으로 시작하며 <b>다음 버전 구현이 완료되어 배포를 하고 싶을 때  master로 다시 합치는 방식 </b>으로 운영됩니다.
 
@@ -46,7 +46,8 @@ feature 브랜치는 기능의 구현을 담당합니다.
 
 브랜치명은 팀 컨벤션을 따르면 됩니다.
 ex) feature/logi feature/#1(issue 번호)
-<img width="517" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/8e6bfdb7-8f20-44aa-9d8c-4d7c8e121189">
+![사진4](https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/fa6308d8-b1bb-4eb8-86e3-98d8ba161f29)
+
 
 feature 브랜치는 develop 브랜치에서 생성되며, 기능 구현이 완료된 이후에 develop 브랜치로  merge 됩니다.
 
@@ -61,8 +62,8 @@ release 브랜치 또한 팀 컨벤션을 따르면 되지만
 
 주로 release-1.2, release/1.2처럼 이름 짓는 게 일반적인 관례입니다.
 
+![사진2](https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/cc543ac8-3895-4c45-9e63-cb1fc548594a)
 
-<img width="516" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/f66f5f73-16f4-4451-a836-b9af22ef1a51">
 
 develop 브랜치에서 배포할 수 있는 수준의 기능이 모이면 release 브랜치를 분기합니다.
 
@@ -82,7 +83,7 @@ hotfix 브랜치 또한 팀 컨벤션을 따르면 되지만
 
 주로 hotfix-1.2.1 이름 짓는 게 일반적인 관례입니다.(master 브랜치의 tag가 1.2였을 경우)
 
-<img width="494" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/31bbfddf-94bd-4718-8faa-fb968a6bd36f">
+![사진3](https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/45be46c3-a3d8-4a19-9c3f-c9c72ce23067)
 
 이미 출시된 버전에서 수정사항이 생겼을 경우 master 브랜치에서 분기하여 hotfix 브랜치를 생성합니다.
 
