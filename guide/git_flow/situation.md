@@ -9,6 +9,7 @@
     - develop branch에 setting 폴더에 존재하는 setting1.md, setting2.md파일을 copy and paste하여 commit합니다.
     - 1번 develop branch의 목적은 ‘환경 세팅’입니다.
     - 환경 세팅이라 함은, 버전, 라이브러리, 프레임워크 셋팅 등이 있겠습니다만, 우리는 md파일로 실습하므로, 문제를 복붙하는 것입니다. (교수님이 1번부터 25번 문제 다 있는지 확인해라~ 하는거랑 비슷함)
+    - init1.md, init2.md 파일의 이름은 answer1, answer2로 변경해주세요!
 
 ### [step 3]
 1. 2번 develop branch에서는 두 개의 feature branch (next feature, future feature) 를 생성합니다. (commit)
