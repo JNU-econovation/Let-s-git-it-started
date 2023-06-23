@@ -43,11 +43,13 @@
 ### [step 5]
 1. 2번 main branch에서 1번 hotfix 브랜치를 생성해주고 버그(나머지 문제 하나 남은거)를 해결해줍시다. (commit)
 2. 그럼 이제 다 해결된 1번 hotfix 브랜치에서 3번 main branch로 pull request 를 보냅시다. (commit)
-- 다 해결되었죠? 그럼 이제 git log graph를 살펴봅시다. 상당히 지저분한 것을 볼 수 있습니다.
+- 다 해결되었죠? 그럼 이제 git log graph를 살펴봅시다. 상당히 지저분한 것을 볼 수 있습니다. 따라서 이제 사용하지 않는 브랜치를 삭제하도록 하겠습니다.
+
+    삭제 명령어는 다음과 같습니다.
     
     git branch -d {브랜치명}
     
-3. develop, main branch를 제외한 branch들은 삭제해줍시다. (님들 이거 삭제 명령어도 구글링 안하면 진짜 마음아플거같아요 - 이도연)
+3. develop, main branch를 제외한 branch들은 삭제해줍시다.
 
 ### [step 6]
 위 5단계를 모두 거친 후 각 팀의 레포지토리 링크를 [이슈로 등록](https://github.com/JNU-econovation/Let-s-git-it-started/issues) 해주세요~
