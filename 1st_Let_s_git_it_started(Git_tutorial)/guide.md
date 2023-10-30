@@ -112,7 +112,7 @@ Git은 **local Repository**, **remote Repository** 두 종류의 저장소로 �
 
 자신의 PC 저장소에서 작업하다가 작업한 내용을 공유하고 싶을 때 원격 저장소에 업로드하면 되겠죠? 물론 원격 저장소에서 다른 사람이 파일을 로컬 저장소로 가져올 수도 있습니다.
 
-## 시작하기
+## 3️⃣ 시작하기
 
 이제 Git을 본격적으로 사용해봅시다.
 
@@ -157,7 +157,7 @@ git remote add <원격 저장소의 별칭> <원격 저장소의 주소>
 
 우리는 github 서버에 Working Directory에서 작업한 내용을 관리하려고 합니다. 이 작업을 하기 위해서 github에 remote repository를 생성해야 합니다.
 
-### Git 브랜치
+## 4️⃣ Git 브랜치
 
 Git의 최고 장점이라고 평가되는 브랜치는 무엇일까요?
 
@@ -207,28 +207,28 @@ git switch {이동할 브랜치 이름}
 
 +) 이처럼 브랜치를 생성할 때 규칙을 만들어 효과적으로 협업하는 방법을 [Git 브랜치 전략](https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-github-flow-git-flow-%F0%9F%93%88-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5)이라고 합니다.
 
-## Git 명령어
+## 5️⃣ Git 명령어
 
 ### git init
 
 현재 작업 디렉토리를 git으로 관리하기 위한 명령어입니다.
 
-1️⃣ 저장소로 사용하고자 하는 디렉토리로 이동하여 `git init`을 입력합니다.
+👉 저장소로 사용하고자 하는 디렉토리로 이동하여 `git init`을 입력합니다.
 
 ```bash
 git init
 ```
 
-2️⃣ `.git` 디렉토리가 생성됩니다. Git이 현재 디렉토리의 변동사항을 계속 파악하고 있다는 의미입니다.
+👉 `.git` 디렉토리가 생성됩니다. Git이 현재 디렉토리의 변동사항을 계속 파악하고 있다는 의미입니다.
 
 - `.git` 디렉토리는 숨겨진 디렉토리입니다. 일반적인 `ls` 명령만으로는 디렉토리가 조회되지 않습니다. 따라서 `ls -al` 을 입력하여 확인 가능합니다.
 
-​<img width="739" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/daaad882-838b-41cc-b39e-b30d77481d0d"><br>git init을 하기 전 디렉터리 모습입니다.
+​<img width="739" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/daaad882-838b-41cc-b39e-b30d77481d0d"><br>git init을 하기 전 디렉토리 모습입니다.
 
 👉 이후 git init 명령어를 cmd창에 입력해봅시다.<br>
 <img width="568" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/718051f1-777a-4691-a260-6226eacb118a">
 
-👉 이후 아래와 같이 .git 디렉터리가 생성됨을 알 수 있습니다.
+👉 이후 아래와 같이 .git 디렉토리가 생성됨을 알 수 있습니다.
 <img width="733" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/7775481b-a13e-47bd-9e54-b1499dab4edd">
 
 ### git remote add
@@ -329,14 +329,14 @@ clone한 local repository에서 새로운 파일을 생성하였습니다.
 > staged(스테이징 됨) 상태가 된 것을 확인할 수 있습니다. 즉 커밋할 준비가 된 상태입니다.
 > <img width="617" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/f5049b6d-25ee-4507-95d9-63398d9780d6">
 
-## git branch
+### git branch
 
 위에서 [브랜치](#Git-브랜치)에 대해 공부했죠? 관련 명령어를 알아봅시다.
 
 > 브랜치 생성하기
 
 ```bash
-git branch {브랜치명}
+git branch <브랜치명>
 ```
 
 <img width="1088" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/e225bad2-de88-4aca-8179-dee042771546">
@@ -414,7 +414,7 @@ git switch <브랜치명>
 
 <br>
 
-## Git Merge
+## 7️⃣ Git Merge
 
 명명된 커밋(현재 브랜치에서 히스토리가 갈라진 시점부터)의 변경 내용을 현재 브랜치에 통합한다. 이 명령은 다른 리포지토리의 변경 내용을 통합하기 위해 git pull에서 사용되며, 한 브랜치의 변경 내용을 다른 브랜치에 병합하기 위해 수동으로 사용할 수도 있다.
 
@@ -428,7 +428,7 @@ git switch <브랜치명>
 
 <br>
 
-## Git Rebase
+## 8️⃣ Git Rebase
 
 브랜치를 병합하는 또 다른 방법 중 하나는 Rebase다.
 
