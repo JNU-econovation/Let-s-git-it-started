@@ -8,7 +8,7 @@ Let’s git it started 행사는 개발 프로젝트를 진행할 때 자주 사
 
 - Git/Github 사용 방법과 Markdown 문법을 공부하고 사전과제를 진행합니다.
   - [사전과제 안내](#깃행사-사전과제)
-- 자기소개 글을 정해진 컨벤션에 맞추어 Let’s git it started 레포에 Pull Request 합니다.
+- 자기소개 글을 정해진 [컨벤션](Glossary_of_Terms/Commit%20Convention.md)에 맞추어 Let’s git it started 레포에 Pull Request 합니다.
 - 다른 사람들의 자기소개글을 읽으며 댓글과 이모지를 활용해 적극적으로 소통합니다.
 - 6명 이상의 동아리원들로부터 comment를 받으시면, 확인 후 merge해드립니다.
 <br> </br>
