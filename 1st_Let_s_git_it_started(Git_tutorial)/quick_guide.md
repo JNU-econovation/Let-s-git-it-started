@@ -46,38 +46,77 @@
 
 앗! git 명령이 잘 생각나지 않으신다구요? **확인하기**를 눌러보세요✨
 
-1. 다음의 저장소를 본인 repository로 fork 해주세요.
-2. fork해온 본인의 저장소를 local에 `clone`해주세요.
-	<details>
+1.  명령어 창을 띄우세요.
+2.  작업할 폴더(디렉토리)로 이동하여 폴더를 만들어주세요.
+   	<details>
 	<summary>확인하기</summary>
 	<div markdown="1">
-	<pre>git clone https://github.com/{본인 깃허브 아이디}/Let-s-git-it-started.git</pre>
-	<text>이후 local에 clone된 저장소로 이동해주세요!</text>
-	<pre>cd Let-s-git-it-started</pre>
+	<text> 파일로 들어가기 </text>
+	<pre>cd {작업할 디렉토리} </pre>
+	<text> 파일 만들기 </text>
+	<pre>mkdir [파일이름]</pre>
+	<text> 내부 파일 확인 </text>
+	<pre>ls</pre>
 	</div>
 	</details>
-3. 자기소개 문서를 작성하여 main으로 `commit`합니다.username.md파일은 삭제하시면 안됩니다. 
-
-   `자기소개 문서 제목은 '본인의 'GitHub아이디'로 만들어주세요.(ex) econo.md)`
-	 <details>
+3. 작업할 폴더에서 git init 해주세요.
+4. git 사용이 처음인 경우 이름과 이메일을 설정해주세요.
+   	<details>
 	<summary>확인하기</summary>
 	<div markdown="1">
-	<pre>git commit -m "commit message"</pre>
+	<text> 이름, 이메일 설정하기 </text>
+	<pre> git config --global user.name "[본인 이름]"
+	git config --global user.email "[본인 이메일]"
+	git config --global --list </pre>
 	</div>
 	</details>
+5. 다음의 저장소를 본인 repository로 fork 해주세요.
+6. 자신의 local에 원격 저장소 등록하기
+   	<details>
+	<summary>확인하기</summary>
+	<div markdown="1">
+	<text> 원격 저장소 추가하기 </text>
+	<pre> git remote add [저장소 이름] [저장소 주소] 
+	git remote -v </pre>
+	</div>
+	</details>
+7. 자신의 local에 원격 저장소 내역 가져오기
+      	<details>
+	<summary>확인하기</summary>
+	<div markdown="1">
+	<text> 원격 브랜치에서 pull 해오기 </text>
+	<pre> git pull [저장소 이름] [가져올 브랜치] </pre>
+	</div>
 	</details>
 
-5. 해당 commit을 `origin/main`으로 `push`합니다.
-	<details>
-		<summary>확인하기</summary>
-		<div markdown="1">
-	<pre>git push origin main</pre>
-		</div>
+8. 준비해 온 자기소개 글 수정하기
+   	<details>
+	<summary>확인하기</summary>
+	<div markdown="1">
+	<text> profile.md 파일을 복사하기 </text>
+	<pre> cd 2023-2/
+	ls
+	cp profile.md [본인이름.md]
+	ls</pre>
+	</div>
 	</details>
-
-6. GitHub에서 본인의 repository에서 원래의 repository의 2023-2 브랜치로 Pull Request를 날립니다.
+9. local 저장소의 변경사항을 저장하고 원격 저장소에 보내기
+   	<details>
+	<summary>확인하기</summary>
+	<div markdown="1">
+	<text> add 하기 </text>
+	<pre>git add [본인이름].md</pre>
+	<text> commit 하기 </text>
+	<pre>git commit -m "메시지 내용"</pre>
+	<text> 저장 상태 보기 </text>
+	<pre>git status</pre>
+	<text> 원격 저장소에 push 하 </text>
+	<pre>git push [저장소 이름] [브랜치]</pre>
+	</div>
+	</details>
+10. GitHub에서 본인의 repository에서 원래의 repository의 2023-2 브랜치로 Pull Request를 날립니다.
    - 제목은 '자신의 이름(자신의 GitHub 아이디) - 자기 소개'로 해주세요.
      ex) 에코노(econo) - 자기소개
    - Pull Request 내용은 한줄로 간단하게 자신을 소개하는 내용을 담아주세요.
      ex) 안녕하세요! 에코노베이션 그 자체! 에코노입니다.
-7. PR문서에 `자기 소개`와 `기수` label을 달아주세요!
+11. PR문서에 `자기 소개`와 `기수` label을 달아주세요!
