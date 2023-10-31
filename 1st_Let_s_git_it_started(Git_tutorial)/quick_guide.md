@@ -110,13 +110,13 @@
 	<pre>git commit -m "메시지 내용"</pre>
 	<text> 저장 상태 보기 </text>
 	<pre>git status</pre>
-	<text> 원격 저장소에 push 하 </text>
+	<text> 원격 저장소에 push 하기 </text>
 	<pre>git push [저장소 이름] [브랜치]</pre>
 	</div>
 	</details>
-10. GitHub에서 본인의 repository에서 원래의 repository의 2023-2 브랜치로 Pull Request를 날립니다.
+ 10. GitHub에서 본인의 repository에서 원래의 repository의 2023-2 브랜치로 Pull Request를 날립니다.
    - 제목은 '자신의 이름(자신의 GitHub 아이디) - 자기 소개'로 해주세요.
      ex) 에코노(econo) - 자기소개
    - Pull Request 내용은 한줄로 간단하게 자신을 소개하는 내용을 담아주세요.
      ex) 안녕하세요! 에코노베이션 그 자체! 에코노입니다.
-11. PR문서에 `자기 소개`와 `기수` label을 달아주세요!
+ 11. PR문서에 `자기 소개`와 `기수` label을 달아주세요!
