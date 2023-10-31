@@ -38,7 +38,7 @@
 이모지를 활용하시면 더 개성넘치는 글을 작성하실 수 있답니다 :)
 <a href="https://www.emojiengine.com/ko/" target="_blank">바로가기</a>
 
-**6명 이상의 동아리원들로부터 `comment`를 받으시고, Issue를 하나 이상 올리시면 확인을 통해 `merge`해드립니다.**
+**6명 이상의 동아리원들로부터 `approve`를 받으시고, Issue를 하나 이상 올리시면 확인을 통해 `merge`해드립니다.**
 
 <br></br>
 
@@ -94,9 +94,9 @@
 	<summary>확인하기</summary>
 	<div markdown="1">
 	<text> profile.md 파일을 복사하기 </text>
-	<pre> cd 2023-2/
+	<pre> cd [폴더명]/
 	ls
-	cp profile.md [본인이름.md]
+	cp [복사할 파일] [복사될 파일]
 	ls</pre>
 	</div>
 	</details>
@@ -105,7 +105,7 @@
 	<summary>확인하기</summary>
 	<div markdown="1">
 	<text> add 하기 </text>
-	<pre>git add [본인이름].md</pre>
+	<pre>git add [파일명]</pre>
 	<text> commit 하기 </text>
 	<pre>git commit -m "메시지 내용"</pre>
 	<text> 저장 상태 보기 </text>
