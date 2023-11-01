@@ -61,7 +61,9 @@ $ ls
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/76451902-6e2a-4919-a13e-686d376324b9" width = "700">
 </center>
-
+<figcaption align = "center">
+<b>그림1</b> 실습 폴더 생성 및 이동
+</figcaption>
 
 
 ## Step2. Git 저장소 생성 및 최초 설정
@@ -86,6 +88,9 @@ $ git init
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/20cf6057-9e0f-4c5c-87cd-8bf42901bb19" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림2</b> 작업 폴더에서 깃 초기화
+</figcaption>
 
 `git init` 명령을 실행했을 때, 이전과는 달리 경로의 오른쪽에 `(master)`혹은 `(main)`이라는 푸른색 글씨가 나타난 것이 보입니다. 이제 `practice` 폴더의 내용은 버전 관리가 가능하게 되었습니다.
 
@@ -121,7 +126,9 @@ Fork 기능은 다른 계정의 원격 저장소에 있는 내용을 내 계정�
 <center>
 <img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/97151e74-2b64-46be-a061-325fd8e397e0" width = "700">
 </center>
-
+<figcaption align = "center">
+<b>그림3</b> upstream 저장소에서 origin 저장소로 fork
+</figcaption>
 
 ## Step1. 다른 원격 저장소를 내 원격 저장소로 복제(Fork)
 > Github에서 다른 계정의 원격 저장소를 Fork해옵니다.
@@ -132,6 +139,9 @@ Fork 기능은 다른 계정의 원격 저장소에 있는 내용을 내 계정�
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/3ba423cc-9f70-4999-a1b2-b286a341acee" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림4</b> JNU-econovation / Let-s-git-it-started 저장소 fork 하기 (1) - 원본 원격 저장소에서 Fork 버튼 누르기
+</figcaption>
 
 ### 2. **Create a new fork 창에서 설정 후 Create fork버튼 누르기**
 
@@ -140,6 +150,9 @@ Fork 버튼을 누르면 나타나는 Create a new fork 창에서 Create fork �
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/3b0bdf03-49ba-4861-b15d-9f8869fe6fa3" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림5</b> JNU-econovation / Let-s-git-it-started 저장소 fork 하기 (2) - Fork 설정 및 생성하기
+</figcaption>
 
 ### 3. **복사한 저장소가 내 계정으로 잘 복사되었는지 확인하기**
 
@@ -148,7 +161,9 @@ Fork 과정을 완료하였다면, 내 계정에 Let-s-git-it-started 레포지�
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/a30f7230-3f28-4de2-b74a-94c02ecb885c" width = "700">
 </center>
-
+<figcaption align = "center">
+<b>그림6</b> JNU-econovation / Let-s-git-it-started 저장소 fork 하기 (3) - 나의 원격 저장소에서 Fork가 잘 되었는지 확인
+</figcaption>
 
 
 
@@ -163,7 +178,9 @@ remote 명령어를 통해 로컬 저장소(내 컴퓨터)와 원격 저장소(�
 <center>
 <img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/446bf39c-5358-45e5-9184-d979b2a197d0" width = "700">
 </center>
-
+<figcaption align = "center">
+<b>그림7</b> 원격 저장소와 로컬 저장소 연결
+</figcaption>
 
 
 ## Step1. 개인 로컬(local) 저장소와 원격(remote) 저장소 연결 - JNU-econovation / Let-s-git-it-started와 연결
@@ -186,6 +203,9 @@ $ git remote add upstream https://github.com/JNU-econovation/Let-s-git-it-starte
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/e30f8b56-ff01-4500-9ed9-7a36c99db265" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림8</b> 원본 원격 저장소 주소 복사하기
+</figcaption>
 
 ### 2. **git remote -v**
 
@@ -201,7 +221,9 @@ $ git remote -v
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/4407cbb2-c39d-44e6-9538-a989e3560b8a" width = "700">
 </center>
-
+<figcaption align = "center">
+<b>그림9</b> 원본 원격 저장소와 로컬 저장소 연결
+</figcaption>
 
 
 ## Step2. 개인 로컬(local) 저장소와 원격(remote) 저장소 연결 - fork 해온 Let-s-git-it-started와 연결
@@ -223,6 +245,9 @@ fork해온 원격 저장소로 들어가 Code 버튼을 눌러 저장소의 주�
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/3f602203-94c2-41d5-8c02-7a6a48fb6f3f" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림10</b> 복제한 원격 저장소의 주소 복사
+</figcaption>
 
 ### 2. **git remote -v**
 
@@ -238,7 +263,9 @@ fork 해온 원격 저장소의 주소가 `origin`이라는 이름으로 등록�
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/5b565271-4111-448c-82cd-d1944f695157" width = "700">
 </center>
-
+<figcaption align = "center">
+<b>그림11</b> 복제한 원격 저장소와 로컬 저장소 연결
+</figcaption>
 
 
 ## Step3. 원격 저장소에 저장되어있는 내용을 가져오기(pull)
@@ -248,6 +275,9 @@ fork 해온 원격 저장소의 주소가 `origin`이라는 이름으로 등록�
 <center>
 <img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/5f5c4b8c-fe5b-4cc3-a499-b81fb9e0d62d" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림12</b> 원본 원격 저장소의 내용을 로컬 저장소로 가져오기
+</figcaption>
 
 ### git pull origin main
 
@@ -266,6 +296,9 @@ $ git pull upstream {현재 학기 브랜치명}
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/8d6ef681-bb4f-493f-b72c-7fee970dc0ba" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림13</b> 원본 원격 저장소의 특정 브랜치에서 파일 내역 가져오기
+</figcaption>
 
 
 - `ls` 명령어를 실행했을 때, 원격 저장소의 내용들이 불러와진 것을 확인할 수 있습니다.
@@ -292,7 +325,9 @@ $ git pull upstream {현재 학기 브랜치명}
 <center>
 <img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/2fdf1f8a-7500-4ffa-a180-f98597e30c05" width = "700">
 </center>
-
+<figcaption align = "center">
+<b>그림14</b> 로컬 저장소에서 add, commit하기
+</figcaption>
 
 
 ## Step1. 준비해 온 자기소개로 글 수정하기
@@ -309,11 +344,9 @@ $ cp profile.md {내 깃허브 id}.md
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/ba9cd3a5-cbd6-44a3-af21-8adf82a3b11f" width = "700">
 </center>
-
 <figcaption align = "center">
-<b>그림6</b> 파일을 복제하여 생성한 모습
+<b>그림15</b> profile.md 파일 복제하기
 </figcaption>
-<br></br>
 
 ### 2. 복제하여 생성된 파일에서 자유롭게 자신을 소개하는 글을 작성합니다. 
 - 자유롭게 양식을 수정하셔도 괜찮습니다 :)
@@ -350,7 +383,9 @@ $ git add {파일명}
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/462ae8f2-bd7b-4163-96c8-7e0138db950f" width = "700">
 </center>
-
+<figcaption align = "center">
+<b>그림16</b> git add 명령어 사용하기
+</figcaption>
 
 
 ## Step3. 로컬 저장소에 변경 사항 저장하기(commit)
@@ -374,6 +409,9 @@ $ git commit -m "{남길 commit message}"
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/32da437b-4b50-4036-8ee4-1e493915a452" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림17</b> git commit 명령어 사용하기
+</figcaption>
 
 저는 `docs: add econo.md` 라는 커밋 메시지와 함께 변경 사항을 기록했습니다. 
 
@@ -386,6 +424,9 @@ $ git commit -m "{남길 commit message}"
 <center>
 <img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/47bd97b6-f404-4535-a8c7-fe8220323778" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림18</b> 복제 원격 저장소에 로컬 저장소의 작업 내역 보내기
+</figcaption>
 
 
 
@@ -397,6 +438,9 @@ $ git commit -m "{남길 commit message}"
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/4e93799e-34d0-4fba-aded-9e7a3e776125" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림19</b> 작업 중인 브랜치명 변경하기
+</figcaption>
 
 ### **git push**
 이제 업로드할 준비는 다 완료되었습니다. 지금까지는  local에서 변경 이력을 남긴 것이고 이제 이것을 원격(remote) 저장소에 전송합니다.
@@ -418,11 +462,16 @@ $ git push origin main
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/bb85ee27-1dfc-497e-b0ef-2025eea1a984" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림20</b> 복제 원격 저장소에 로컬에서 커밋한 내용이 반영됨 (1)
+</figcaption>
 
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/e3fb1130-d3b6-4b28-93ab-69b3c5b2db7e" width = "700">
 </center>
-
+<figcaption align = "center">
+<b>그림21</b> 복제 원격 저장소에 로컬에서 커밋한 내용이 반영됨 (2)
+</figcaption>
 
 
 
@@ -435,6 +484,9 @@ Pull Request(PR)은 자신이 변경한 내용을 동료에게 전달하는 과�
 <center>
 <img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/652c573e-4e37-48f0-9445-245fa977c1dc" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림22</b> 복제 원격 저장소에서 원본 원격 저장소로 Pull Request 보내기
+</figcaption>
 
 
 
@@ -451,6 +503,9 @@ Pull Request(PR)은 자신이 변경한 내용을 동료에게 전달하는 과�
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/b369568c-a5b1-4c63-b0a4-17de16e63eef" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림23</b> Pull Request 생성하기 (1)
+</figcaption>
 
 ### 2. Pull Request의 방향을 맞춰준 후 [Create Pull Request] 버튼을 클릭합니다.
 
@@ -459,6 +514,9 @@ Pull Request(PR)은 자신이 변경한 내용을 동료에게 전달하는 과�
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/f667e653-4602-4780-9a1c-5ea18b61b3f8" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림24</b> Pull Request 생성하기 (2)
+</figcaption>
     
 ### 3. Pull Request를 생성합니다.
 
@@ -480,7 +538,9 @@ Pull Request(PR)은 자신이 변경한 내용을 동료에게 전달하는 과�
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/4f720252-9bd8-4780-966c-5439250cedf0" width = "900">
 </center>
-
+<figcaption align = "center">
+<b>그림25</b> Pull Request 생성하기 (3)
+</figcaption>
 
 
     
@@ -500,13 +560,18 @@ Pull Request(PR)을 통해 자신이 변경한 내용을 동료에게 전달했�
 <center>
 <img src = "https://user-images.githubusercontent.com/79842129/229303418-917b8ff8-3f6a-4a0b-83fe-8729ea50470f.png" width = "700">
 </center>
-    
+<figcaption align = "center">
+<b>그림26</b> Review 하기 (1) - Pull Request 클릭하기
+</figcaption>
 
 ### 2. 해당 Pull Request에서 Files changed 탭을 클릭합니다. 
     
 <center>
 <img src = "https://user-images.githubusercontent.com/79842129/229303417-252baaa7-a644-4218-981c-42de68ee9656.png" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림27</b> Review 하기 (2) - File Changed 클릭하기
+</figcaption>
     
 
 ### 3. 공감가는 내용이 있는 줄의 [+] 버튼을 클릭하여 자유롭게 의견을 작성한 후 [Start a review] 버튼을 클릭합니다. 
@@ -514,13 +579,18 @@ Pull Request(PR)을 통해 자신이 변경한 내용을 동료에게 전달했�
 <center>
 <img src = "https://user-images.githubusercontent.com/79842129/229303416-36f6a614-1c2e-44c9-aa8a-a64f3dfd6c2e.png" width = "700">
 </center>
-
+<figcaption align = "center">
+<b>그림28</b> Review 하기 (3) - Review 작성하기
+</figcaption>
 
 ### 4. 모든 Review를 작성하셨다면 [Review changes] 버튼을 클릭하고 설정한 후 Review를 제출합니다.
 
 <center>
 <img src = "https://user-images.githubusercontent.com/79842129/229303787-5c4dd4c1-6b4f-4810-ace0-5a14480c6d96.png" width = "700">
 </center>
+<figcaption align = "center">
+<b>그림29</b> Review 하기 (4) - Review 마무리하기
+</figcaption>
 
 **1.** 전체적인 Review 코멘트를 작성합니다.
 
