@@ -54,9 +54,9 @@ $ mkdir practice
 ```bash
 $ ls
 ```
-현재 작업 중인 폴더에 있는 내용을 출력합니다.
+위와 같이 작성했을 떄, 현재 작업 중인 폴더에 있는 내용을 출력합니다.
 
-저는 홈 폴더의 하위에 있는 `desktop`이라는 폴더로 이동 후 `practice`라는 폴더를 생성한 뒤, 해당 폴더로 이동해보도록 하겠습니다. 홈 폴더는 `~` 와 같이 표시합니다.
+저는 홈 폴더의 하위에 있는 `desktop`이라는 폴더로 이동 후 `practice`라는 폴더를 생성한 뒤, 해당 폴더로 이동해보도록 하겠습니다. `~` 표시는 홈 폴더를 나타냅니다.
 
 <p align="center">
     <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/76451902-6e2a-4919-a13e-686d376324b9" width = "700">
@@ -82,7 +82,7 @@ $ ls
 $ git init
 ```
 
-이 폴더에서 git을 실행할거야! 라는 의미입니다.
+현재 작업 중인 폴더에서 git을 실행할거야! 라는 의미입니다.
 
 저는 실습을 위해 생성한 `practice`라는 폴더에서 `git init` 명령어를 실행해보도록 하겠습니다.
 
@@ -100,7 +100,9 @@ $ git init
 
 ### 2. **git config --global**
 
-커밋을 할 때 사용할 이름과 이메일을 설정합니다. 커밋이 무엇인지는 [4) add, commit, push하기](#4--add-commit-push)에서 확인할 수 있습니다. 이 과정은 이전에 git을 사용해본 적이 있다면 생략해도 좋습니다. 환경 설정은 한 컴퓨터에서 한 번만 해도 괜찮기 때문입니다. 물론 정보 수정은 얼마든지 가능합니다.
+커밋을 할 때 사용할 이름과 이메일을 설정합니다. 커밋이 무엇인지는 [4) add, commit, push하기 - Step3. 로컬 저장소에 변경 사항 저장하기(commit)](#step3-로컬-저장소에-변경-사항-저장하기commit)단계에서 더 자세하게 확인할 수 있습니다.
+
+이전에 git을 사용해본 적이 있다면 최초 설정하는 과정은 생략해도 좋습니다. 환경 설정은 한 컴퓨터에서 한 번만 해도 괜찮기 때문입니다. 물론 원하신다면 얼마든지 다시 정보 수정을 할 수 있습니다.
 
 ```bash
 $ git config --global user.name "{Your name}"
@@ -121,7 +123,7 @@ $ git config --list
 
 # 2 ) Fork
 
-Fork 기능은 다른 계정의 원격 저장소에 있는 내용을 내 계정의 원격 저장소로 가지고 올 때 사용합니다. 이 실습에서는 [JNU-econovation의 Let-s-git-it-started](https://github.com/JNU-econovation/Let-s-git-it-started) 저장소를 내 계정의 원격 저장소로 가지고 오기 위해 사용합니다.
+Fork 기능은 다른 계정의 원격 저장소에 있는 내용을 내 계정의 원격 저장소로 가지고 올 때 사용합니다. 이 실습에서는 [JNU-econovation의 Let-s-git-it-started](https://github.com/JNU-econovation/Let-s-git-it-started) 저장소를 여러분들의 계정의 원격 저장소로 가지고 오기 위해 사용합니다.
 
 - [다른 원격 저장소를 내 원격 저장소로 복제(Fork)](#step1-다른-원격-저장소를-내-원격-저장소로-복제fork)
 
@@ -136,6 +138,7 @@ Fork 기능은 다른 계정의 원격 저장소에 있는 내용을 내 계정�
 
 ## Step1. 다른 원격 저장소를 내 원격 저장소로 복제(Fork)
 > Github에서 다른 계정의 원격 저장소를 Fork해옵니다.
+
 ### 1. **복사하고자 하는 원격 저장소에서 Fork버튼 누르기**
 
 복사하고자 하는 원격 저장소에 들어가 Fork 버튼을 클릭합니다. 이번 실습에서 Fork를 진행할 레포지토리는 [JNU-econovation의 Let-s-git-it-started](https://github.com/JNU-econovation/Let-s-git-it-started)입니다.
@@ -178,18 +181,14 @@ Fork 과정을 완료하였다면, 내 계정에 Let-s-git-it-started 레포지�
 
 
 # 3 ) remote, pull
-remote 명령어를 통해 로컬 저장소(내 컴퓨터)와 원격 저장소(깃허브 저장소)를 연결할 수 있으며, pull 명령어를 통해 원격 저장소에 저장 되어있는 내용을 로컬 저장소로 가져올 수 있습니다. 에코노베이션의 Let-s-git-it-started 저장소와 내 로컬 저장소를 먼저 연결한 뒤, Fork 해온 Let-s-git-it-started 저장소와 내 로컬 저장소도 연결해봅시다. 그리고 원격 저장소에서 소스 코드를 가져와봅시다.
+remote 명령어를 통해 로컬 저장소(내 컴퓨터)와 원격 저장소(깃허브 저장소)를 연결할 수 있으며, pull 명령어를 통해 원격 저장소에 저장 되어있는 내용을 로컬 저장소로 가져올 수 있습니다. 에코노베이션의 Let-s-git-it-started 저장소와 내 로컬 저장소를 먼저 연결한 뒤, Fork 해온 Let-s-git-it-started 저장소와 내 로컬 저장소도 연결해봅시다. 그리고 원격 저장소에서 로컬 저장소로 소스 코드를 가져와봅시다.
 
 1. [개인 로컬(local) 저장소와 원본 원격(remote) 저장소 연결 - JNU-econovation / Let-s-git-it-started와 연결](#step1-개인-로컬local-저장소와-원격remote-저장소-연결---jnu-econovation--let-s-git-it-started와-연결)
 2. [개인 로컬(local) 저장소와 원격(remote) 저장소 연결 - fork 해온 Let-s-git-it-started와 연결](#step2-개인-로컬local-저장소와-원격remote-저장소-연결---fork-해온-let-s-git-it-started와-연결)
 3. [원격 저장소에 저장되어있는 내용을 가져오기(pull)](#step3-원격-저장소에-저장되어있는-내용을-가져오기pull)
 
-<p align="center">
-    <img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/446bf39c-5358-45e5-9184-d979b2a197d0" width = "700">
-</p>
-<p align="center">
-    <b>그림7</b> 원격 저장소와 로컬 저장소 연결
-</p>
+
+
 
 
 ## Step1. 개인 로컬(local) 저장소와 원격(remote) 저장소 연결 - JNU-econovation / Let-s-git-it-started와 연결
@@ -205,7 +204,14 @@ remote 명령어를 통해 로컬 저장소(내 컴퓨터)와 원격 저장소(�
 $ git remote add upstream https://github.com/JNU-econovation/Let-s-git-it-started
 ```
 
-[JNU-econovation / Let-s-git-it-started](https://github.com/JNU-econovation/Let-s-git-it-started) 저장소를 `upstream`이라는 이름으로 local git에 등록하는 과정입니다. `upstream`은 등록할 긴 **원격 저장소 주소를 대체할 별명**인데요. 일반적으로 fork 해온 복제 원격 저장소에는 `origin`이라는 명칭을, fork를 시도한 원본 원격 저장소에는 `upstream`이라는 명칭을 주로 사용합니다. 이에 따라 우리도 fork 해온 Let-s-git-it-started 저장소는 `origin`이라는 명칭으로 로컬 저장소와 연결하고, [JNU-econovation / Let-s-git-it-started](https://github.com/JNU-econovation/Let-s-git-it-started) 저장소는 `upstream`이라는 명칭으로 로컬 저장소를 연결할 것입니다. 그렇다면 이제 본격적으로 원격 저장소와 로컬 저장소를 연결해봅시다.
+[JNU-econovation / Let-s-git-it-started](https://github.com/JNU-econovation/Let-s-git-it-started) 저장소를 `upstream`이라는 이름으로 local git에 등록하는 과정입니다. `upstream`은 로컬 저장소와 연결할 긴 **원격 저장소 주소를 대체할 별명**인데요. 일반적으로 fork 해온 복제 원격 저장소에는 `origin`이라는 명칭을, fork를 시도한 원본 원격 저장소에는 `upstream`이라는 명칭을 사용합니다. 이에 따라 우리도 fork 해온 Let-s-git-it-started 저장소는 `origin`이라는 명칭으로 로컬 저장소와 연결하고, [JNU-econovation / Let-s-git-it-started](https://github.com/JNU-econovation/Let-s-git-it-started) 저장소는 `upstream`이라는 명칭으로 로컬 저장소를 연결할 것입니다. 그렇다면 이제 본격적으로 원격 저장소와 로컬 저장소를 연결해봅시다.
+
+<p align="center">
+    <img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/446bf39c-5358-45e5-9184-d979b2a197d0" width = "700">
+</p>
+<p align="center">
+    <b>그림7</b> 원격 저장소와 로컬 저장소 연결
+</p>
 
 [JNU-econovation / Let-s-git-it-started](https://github.com/JNU-econovation/Let-s-git-it-started) 저장소로 들어가 Code 버튼을 눌러 저장소의 주소를 복사해올 수 있습니다. 아래의 그림을 참고해주세요.
 
@@ -253,7 +259,7 @@ $ git remote add origin {fork해온 원격 저장소의 주소}
 
 fork해온 원격 저장소를 `origin`이라는 이름으로 local git에 등록합니다. 
 
-fork해온 원격 저장소로 들어가 Code 버튼을 눌러 저장소의 주소를 복사해올 수 있습니다. 아래의 그림을 참고해주세요.
+fork해온 원격 저장소로 들어가 [Code] 버튼을 눌러 저장소의 주소를 복사해올 수 있습니다. 아래의 그림을 참고해주세요.
 
 <p align="center">
     <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/3f602203-94c2-41d5-8c02-7a6a48fb6f3f" width = "700">
@@ -308,7 +314,7 @@ $ git pull upstream {현재 학기 브랜치명}
 
 실습 화면을 확인해봅시다.
 
-문서를 작성하고 있는 시점은 2023년 2학기입니다. 따라서 저는 upstream 원격 저장소의 2023-2 브랜치를 pull해오도록 하겠습니다.
+제가 문서를 작성하고 있는 현재 시점은 2023년 2학기입니다. 따라서 저는 upstream 원격 저장소의 2023-2 브랜치를 pull해오도록 하겠습니다.
 
 <p align="center">
     <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/8d6ef681-bb4f-493f-b72c-7fee970dc0ba" width = "700">
@@ -356,7 +362,7 @@ $ git pull upstream {현재 학기 브랜치명}
 ```bash
 $ cp profile.md {내 깃허브 id}.md
 ```
-`cp` 명령어는 파일이나 폴더를 복사할 때 사용하는 명령어입니다. 위와 같이 입력하면 현재 작업 폴더에 있는 `profile.md`` 파일이 현 위치에 `{내 깃허브 id}.md` 파일로 복사됩니다.
+`cp` 명령어는 파일이나 폴더를 복사할 때 사용하는 명령어입니다. 위와 같이 입력하면 현재 작업 폴더에 있는 `profile.md` 파일이 현 위치에 `{내 깃허브 id}.md` 파일로 복사됩니다.
 
 <p align="center">
     <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/ba9cd3a5-cbd6-44a3-af21-8adf82a3b11f" width = "700">
@@ -395,7 +401,7 @@ $ cp profile.md {내 깃허브 id}.md
 $ git add {파일명}
 ```
 
-저는 `econo.md` 파일을 스테이징 하기 위해서 `git add econo.md` 와 같이 명령어를 입력하였습니다. add 명령 후 `git status` 를 통해 저장소의 상태도 확인해주었습니다. 방금 생성한 `econo.md` 파일이 제대로 추가되었네요! 
+저는 `econo.md` 파일을 스테이징 하기 위해서 `git add econo.md` 와 같이 명령어를 입력하였습니다. add 명령 후 `git status` 를 통해 저장소의 상태도 확인해주었습니다. 방금 생성한 `econo.md` 파일이 제대로 추가되었네요!
 
 <p align="center">
     <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/462ae8f2-bd7b-4163-96c8-7e0138db950f" width = "700">
@@ -439,8 +445,6 @@ $ git commit -m "{남길 commit message}"
 
 
 
-
-
 ## Step4. 원격 저장소에 변경 사항 반영하기(push)
 > 로컬(local) 저장소에서 자기소개를 작성한 후, 원격 저장소에 반영(push)하는 과정입니다.
 >
@@ -452,12 +456,10 @@ $ git commit -m "{남길 commit message}"
     <b>그림18</b> 복제 원격 저장소에 로컬 저장소의 작업 내역 보내기
 </p>
 
-
-
 ### **git branch**
-- 현재 작업 중인 branch명이 **`main`이 아닌** 경우 진행합니다❗️
+- 현재 작업 중인 branch명이 **`main`이 아닌** 경우에만 진행합니다❗️
 
-깃허브에서는 main으로 브랜치가 설정되어 있기 때문에, 터미널에 반영되어있지 않다면 바꿔줍니다.
+깃허브에서는 main 브랜치가 default 브랜치로 설정되어 있기 때문에, 터미널에 반영되어있지 않다면 바꿔줍니다.
 
 <p align="center">
     <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/4e93799e-34d0-4fba-aded-9e7a3e776125" width = "700">
@@ -467,21 +469,23 @@ $ git commit -m "{남길 commit message}"
 </p>
 
 ### **git push**
-이제 업로드할 준비는 다 완료되었습니다. 지금까지는  local에서 변경 이력을 남긴 것이고 이제 이것을 원격(remote) 저장소에 전송합니다.
+
+이제 업로드할 준비는 다 완료되었습니다. 지금까지는 local에서 변경 이력을 남긴 것이고 이제 이것을 원격(remote) 저장소에 전송합니다.
 
 ```bash
-$ git push origin {branch명}
+$ git push {원격 저장소 명칭} {branch명}
 ```
 
-`origin`은 원격 저장소(remote)의 주소를 의미하는데요. `origin`이라는 원격저장소에 현재 작업 중인 branch에서 남긴 코드 변경 이력을 올리는 과정입니다.
+이전에 원격 저장소와 로컬 저장소를 연결하면서 `remote add origin {fork해온 원격 저장소의 주소}`라는 명령어를 입력했던 것이 기억나시나요? `{원격 저장소 명칭}`에 이 때 입력했던 원격 저장소의 명칭을 입력하면 됩니다.
 
-예를 들어, 저는 main이라는 branch에서 자기소개글을 작성했고 이 변동 사항을 origin에 올리기 때문에 명령어는 다음과 같습니다.
+이번 실습에서는 fork해온 원격 저장소의 main 브랜치에 로컬 저장소의 main 브랜치에서 변경했던 내용을 push합니다. 현재 작업 중인 로컬 저장소의 main 브랜치에서 남긴 코드 변경 이력을 `origin`이라고 저장했던 원격 저장소에 올려봅시다.
 
 ```bash
 $ git push origin main
 ```
 
-명령어 실행 결과, fork해온 원격 저장소에서 main이라는 브랜치에 local에서 작업한 내용이 업로드 되었음을 확인할 수 있습니다.
+`origin`은 원격 저장소(remote)의 주소를 의미하는데요. 
+명령어 실행 결과, fork해온 원격 저장소에서 main 브랜치에 local에서 작업한 내용이 업로드 되었음을 확인할 수 있습니다.
 
 <p align="center">
     <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/bb85ee27-1dfc-497e-b0ef-2025eea1a984" width = "700">
@@ -516,13 +520,11 @@ Pull Request(PR)은 자신이 변경한 내용을 동료에게 전달하는 과�
 
 
 
-
-
 ## Step1. Pull Request 생성
 
 > 자신이 반영한 내역(자기소개 작성 후 추가)을 공유하는 과정입니다.
 > 
-> - 내가 개발한 코드 변경 사항을 fork를 시도했던 원본 저장소에 반영하고 싶을 때 기존 프로젝트 소유자에게 요청하는 작업을 ***Pull Request한다*** 라고 합니다.
+> - 내가 개발한 코드 변경 사항을 원본 저장소에 반영하고 싶을 때 기존 프로젝트 소유자에게 요청하는 작업을 ***Pull Request한다*** 라고 합니다.
 
 이제 모든 준비가 다 되었습니다. 변경한 내용을 전달해보아요!
 
@@ -549,16 +551,16 @@ Pull Request(PR)은 자신이 변경한 내용을 동료에게 전달하는 과�
 ### 3. Pull Request를 생성합니다.
 
 1. Pull request 제목, 내용을 작성합니다. (규칙에 맞게 작성해주세요!)
-    - 제목: 자신의 이름(Github 아이디) 자기소개
+    - 제목: 자신의 이름(Github 아이디) - 자기소개
 
-        ex. 에코노(econo) 자기소개
+        ex. 에코노(econo) - 자기소개
 
     - 내용: 간단한 한줄 소개 등 자유롭게 구성
 
         ex. 안녕하세요! 에코노베이션 25기 에코노입니다.
 
 2. PR에 대한 라벨을 지정합니다. 
-    - `자기소개` 라벨과 `자신의 기수`를 나타내는 라벨을 지정해주세요.
+    - `자기소개` 라벨과 `자신의 기수`, `자신의 MBTI` 나타내는 라벨을 지정해주세요.
 3. 마지막으로 [Create pull request] 버튼을 클릭합니다. 
 
 **❗️위 조건을 모두 만족하신 분들에 한해 approve해드리니! 꼭 확인해주세요** 
@@ -576,7 +578,7 @@ Pull Request(PR)은 자신이 변경한 내용을 동료에게 전달하는 과�
 
 # 6 ) Review
 
-Pull Request(PR)을 통해 자신이 변경한 내용을 동료에게 전달했으면, 동료는 잘 작업이 되었는지 검토 과정이 필요한데요. 
+Pull Request(PR)을 통해 자신이 변경한 내용을 동료에게 전달했으면, 동료는 잘 작업이 되었는지 검토 과정이 필요한데요.
 
 예를 들어, 저희 TF팀이 함께 이 github자료를 만든다고 해봅시다. 제가 실습 부분을 작성했고 작성한 내용을 도연님, 건형님, 배경님께 전달하기 위해 Pull Request(PR)를 작성하고 이 분들은 제가 작성한 내용이 github 자료에 들어가도 괜찮을지, 잘못된 부분은 없는지 아마 검토하실 것입니다.
 
@@ -622,11 +624,11 @@ Pull Request(PR)을 통해 자신이 변경한 내용을 동료에게 전달했�
 
 **1.** 전체적인 Review 코멘트를 작성합니다.
 
-**2.** **Comment, Approve, Request changes** 설정합니다.
+**2.** **Comment, Approve, Request changes** 중에 **Approve**로 설정합니다.
 
    - **Comment** : approve없이 feedback만 작성
 
-   - **Approve** : PullRequest가 문제 없을 때 선택
+   - **Approve** : Pull Request가 문제 없을 때 선택
 
    - **Request changes** : 작성된 PullRequest에 수정할 점이 있을 때 선택
 
