@@ -117,10 +117,10 @@ $ git config --list
 Fork 기능은 다른 계정의 원격 저장소에 있는 내용을 내 계정의 원격 저장소로 가지고 올 때 사용합니다. 이 실습에서는 [JNU-econovation의 Let-s-git-it-started](https://github.com/JNU-econovation/Let-s-git-it-started) 저장소를 내 계정의 원격 저장소로 가지고 오기 위해 사용합니다.
 
 - [다른 원격 저장소를 내 원격 저장소로 복제(Fork)](#step1-다른-원격-저장소를-내-원격-저장소로-복제fork)
+  
 <center>
-<img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/ced63586-f4e5-46af-8f9c-a990ad1a67af" width = "700">
+<img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/97151e74-2b64-46be-a061-325fd8e397e0" width = "700">
 </center>
-
 
 
 ## Step1. 다른 원격 저장소를 내 원격 저장소로 복제(Fork)
