@@ -161,7 +161,7 @@ remote 명령어를 통해 로컬 저장소(내 컴퓨터)와 원격 저장소(�
 3. [원격 저장소에 저장되어있는 내용을 가져오기(pull)](#step3-원격-저장소에-저장되어있는-내용을-가져오기pull)
 
 <center>
-<img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/d1a97943-e260-460b-82d8-5220ff14193b" width = "700">
+<img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/446bf39c-5358-45e5-9184-d979b2a197d0" width = "700">
 </center>
 
 
@@ -246,7 +246,7 @@ fork 해온 원격 저장소의 주소가 `origin`이라는 이름으로 등록�
 >
 
 <center>
-<img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/ad006841-f018-4a91-9a2a-6c6bbe812be3" width = "700">
+<img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/5f5c4b8c-fe5b-4cc3-a499-b81fb9e0d62d" width = "700">
 </center>
 
 ### git pull origin main
@@ -290,7 +290,7 @@ $ git pull upstream {현재 학기 브랜치명}
 4. [원격 저장소에 변경 사항 반영하기(push)](#step4-원격-저장소에-변경-사항-반영하기push)
 
 <center>
-<img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/26ba2deb-c532-4be0-bc0c-22ff2c2d9c8b" width = "700">
+<img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/2fdf1f8a-7500-4ffa-a180-f98597e30c05" width = "700">
 </center>
 
 
@@ -384,8 +384,10 @@ $ git commit -m "{남길 commit message}"
 >
 
 <center>
-<img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/99e759e2-3dcc-454b-a890-c3695382fcc7" width = "700">
+<img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/47bd97b6-f404-4535-a8c7-fe8220323778" width = "700">
 </center>
+
+
 
 ### **git branch**
 - 현재 작업 중인 branch명이 **`main`이 아닌** 경우 진행합니다❗️
@@ -431,8 +433,10 @@ Pull Request(PR)은 자신이 변경한 내용을 동료에게 전달하는 과�
 - [Pull Request 생성](#step1-pull-request-생성)
     
 <center>
-<img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/59e9cba7-5d1a-4171-ba10-3dabcd67b33a" width = "700">
+<img src = "https://github.com/Hyeonz1/Let-s-git-it-started/assets/114472483/652c573e-4e37-48f0-9445-245fa977c1dc" width = "700">
 </center>
+
+
 
 ## Step1. Pull Request 생성
 
