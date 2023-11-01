@@ -254,12 +254,14 @@ fork 해온 원격 저장소의 주소가 `origin`이라는 이름으로 등록�
 등록한 원격 저장소에 담긴 내역을 local에 가져옵니다. 
 
 ```bash
-$ git pull upstream 2023-2
+$ git pull upstream {현재 학기 브랜치명}
 ```
 
-등록된 원격 저장소 주소(`upstream`이 되겠죠?)의 `2023-2` branch에 담긴 내용들을 가져오겠다 라는 의미입니다. 작업하고 있는 local 저장소를 최신 상태로 업데이트하는 과정이기 때문에 협업에서 중요한 과정입니다.
+등록된 원격 저장소 주소(`upstream`이 되겠죠?)의 `{현재 학기 브랜치명}` branch에 담긴 내용들을 가져오겠다 라는 의미입니다. 작업하고 있는 local 저장소를 최신 상태로 업데이트하는 과정이기 때문에 협업에서 중요한 과정입니다.
 
 실습 화면을 확인해봅시다.
+
+문서를 작성하고 있는 시점은 2023년 2학기입니다. 따라서 저는 upstream 원격 저장소의 2023-2 브랜치를 pull해오도록 하겠습니다.
 
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/8d6ef681-bb4f-493f-b72c-7fee970dc0ba" width = "700">
