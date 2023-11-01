@@ -366,14 +366,16 @@ $ git add {파일명}
 $ git commit -m "{남길 commit message}"
 ```
 
+이번 실습에서는 자기소개 문서를 커밋하며 `docs: add {내 깃허브 id}.md`와 같이 커밋 메세지를 작성할 것입니다.
+이 커밋 메세지는 "문서에 관한 작업을 실시했으며, 해당 작업은 {내 깃허브 id}.md 파일을 추가한 것이다."라는 의미입니다.
+
 <center>
 <img src = "https://github.com/JNU-econovation/Let-s-git-it-started/assets/114472483/32da437b-4b50-4036-8ee4-1e493915a452" width = "700">
 </center>
 
+저는 `docs: add econo.md` 라는 커밋 메시지와 함께 변경 사항을 기록했습니다. 
 
-저는 "docs: add econo.md" 라는 커밋 메시지와 함께 변경 사항을 기록했습니다. 
-
-
+커밋 메세지 컨벤션에 대해서 더 자세한 사항을 알고 싶다면, Glossary of Terms 폴더의 [Commit Convention.md 파일](https://github.com/JNU-econovation/Let-s-git-it-started/blob/main/Glossary_of_Terms/Commit%20Convention.md)에서 확인할 수 있습니다.
 
 ## Step4. 원격 저장소에 변경 사항 반영하기(push)
 > 로컬(local) 저장소에서 자기소개를 작성한 후, 원격 저장소에 반영(push)하는 과정입니다.
