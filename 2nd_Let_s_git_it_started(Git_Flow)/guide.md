@@ -542,6 +542,57 @@ fork와 Pull Request 전략에서는 **브랜치 대신 fork와 Pull Request 기
 - Pull Request를 사용하여 **원래 프로젝트 Repository로 merge 요청**을 보낼 수 있습니다. 원래 프로젝트의 관리자는 내가 merge를 요청한 코드를 보고 merge를 허용 여부를 결정합니다.
 - fork와 헷갈릴 수 있는 명령어로 clone이 있습니다. clone은 **특정 원격 repository를 내 노트북에 복사**하여 새로운 로컬 저장소를 만드는 명령어입니다. 반면 fork는 **특정 원격 repository를 나의 원격 repository로 복제**해오는 명령입니다.
 
-**우아하게 Pull Request 사용하기**
+### 우아하게 Pull Request 사용하기
 
-이번 시간에는 우아하
+Pull Request는 어떻게 보면 협업의 단위입니다.
+
+대부분의 브랜치 전략에서 PR단위로 기능을 분배하고 리뷰하기 때문입니다. (물론 개인적인 생각입니다.)
+
+그러면 어떻게 하면 Pull Request를 잘 사용할 수 있을지 알아볼까요?
+
+**1. PR Template 만들기**
+
+프로젝트 최상단의 `.github` 디렉토리에 PR 템플릿을 추가할 수 있습니다. PR 템플릿을 추가한다면, 말그대로 팀 내의 Pull Request의 템플릿을 사용할 수 있어 중복 작성을 줄여주어 팀원들에게 편리함을 불어넣을 수 있겠죠?
+
+자세한 사항은 [공식문서(creating-a-pull-request-template-for-your-repository)](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)를 참고해주세요.
+
+**2. Pull Request 우아하게 작성하기**
+
+Pull Request도 하나의 문서입니다. 단순히 프로젝트에서 Merge를 하기위해 쓰는 것이 아닌, 팀에게 리뷰를 받고, 작업 이후 제3자가 **참고하는 문서** 라는 생각으로 작성해야 합니다.
+
+**PR 본문은 상세하게**
+
+보통 자신이 어떤 작업을 했고, 어떤 내역을 했는지 상세하게 설명합니다. 상대방은 지금 PR을 작성한 사람처럼 깊은 고민을 통해 코드를 작성한 사람이 아닙니다. 따라서 이해도에서 차이가 있을 수 있어요. 그래서 어떤 도메인을 알면 좋을지, 어떤 상황인지 등을 자세하게 설명해주면 좋겠죠?
+
+또한 Assignee(작업과 실제 연관이 있는사람)를 지정하므로 실제 작업자가 누군지 알려줄 수 있고,
+
+Reviewer를 지정해 내 코드를 보고 리뷰해줄 사람도 지정하는 것이 필요합니다. (팀의 규칙에 따라서요)
+
+또한 PR 목록에서 나중에 내 PR을 편리하게 관리하기 위해 Label을 다는 것도 잊지 마세요!
+
+이런 하나하나가 모두 문서화이고 팀의 협업을 위함이니, 지금부터 연습해보는 것은 어떨까요?
+
+**3. 이외 잡다한 꿀팁**
+
+**이슈 트래킹 기능**
+Github에는 이슈 트래킹 기능이 있습니다. 무슨 말일까요?
+
+우리가 커밋 내역으로 어떤 작업에 대한 커밋을 찾고 싶을 때, 브랜치의 커밋 내역을 살피게 됩니다.
+
+이 때, 작업한 PR내용까지 궁금하다면 어떻게 접근해야할까요? 상당히 귀찮을 부분이 있는데요,
+
+이 때 바로 PR이나 이슈로 redirect될 수 있게 이슈 트래킹 기능이 있습니다.
+
+커밋 메세지나 PR 본문에 `#<이슈, PR넘버>` 로 작성하게되면 이슈 트래킹 기능을 활용할 수 있습니다.
+
+예시로 보신다면 그림처럼 `#12`, `#19` 등 번호를 붙인다면 해당 이슈나 PR로 리다이렉트 되는 링크를 만들 수 있습니다.
+
+![issue tracking example](./images/image.png)
+
+**자동 close 기능**
+
+보통 PR이 공통 브랜치에 Merge 된다면 issue도 닫아주어야 합니다. 이 때, 100번 작업하는데 100번 Merge될 때 마다 수동으로 이슈를 닫아준다고 생각해보세요. 귀찮지 않을까요?
+
+이를 위해 자동 close 기능을 사용하면 좋습니다. PR본문에 `close #<닫을 이슈넘버>`를 작성해주면, PR이 Merge(close)됨과 동시에 이슈 또한 close됩니다.
+
+`close` 이외에 여러 keyword가 있으니, [링크](https://docs.github.com/ko/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)에서 참고하세요!
