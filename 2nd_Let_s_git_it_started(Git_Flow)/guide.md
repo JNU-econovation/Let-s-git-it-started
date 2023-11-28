@@ -146,6 +146,10 @@ git init		# 작업 디렉토리로 설정한다.
 
 #### Remote Repository 생성
 
+공통으로 관리할 저장소를 사용하기 위해, Remote Repository를 생성합니다. 우리에게 가장 친숙한 Github에서 만들 수 있습니다.
+
+[공식문서](https://docs.github.com/en/get-started/quickstart/create-a-repo)를 참고해 만들어 보세요.
+
 #### Remote Repository 연결
 
 앞에서 원격 저장소를 소개했죠?
