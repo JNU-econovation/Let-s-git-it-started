@@ -427,6 +427,40 @@ git switch {브랜치명}
 
 그러나 병합이 시작될 때 커밋되지 않은 변경 사항이 있는 경우(특히 병합이 시작된 후 변경 사항이 추가로 수정된 경우) `git merge --abort`는 경우에 따라 원래(병합 전) 변경 사항을 재구성할 수 없습니다.
 
+그렇다면 git merge에는 어떤 종류가 있을까요? 저희는 브랜치 병합을 시도할 때 크게 두 가지 상황을 마주할 수 있습니다.
+
+### fast-forward merge
+
+첫 번째 상황은 공통된 base를 가지고 있을 때 입니다. 여기서 base란 각 브랜치가 공통으로 참조하는 commit을 이야기합니다.
+
+<img src='https://wikidocs.net/images/page/153693/05.03.01.jpg'>
+
+위 상황에선 릴리즈된 master브랜치에서 분기해 나간 dev1 브랜치가 참조하는 base가 master와 일치합니다. 즉, 병합을 해도 새로운 커밋이 생겨나지 않고 충돌이 일어나지 않습니다.
+우리는 이런 상태를 fast-forward상태라고 합니다.
+
+<img src='https://wikidocs.net/images/page/153693/05.03.02.jpg'>
+
+fast-forward상태에서 병합을 진행하면 master의 head가 dev1을 참조하도록 이동할 뿐입니다.
+마치 빨리감기 하듯 병합이 되는 이 과정을 저희는 fast-forward라고 부릅니다.
+
+### 3-way merge
+
+두 번째 상황은 하나의 base에서 분기해나간 여러 개의 커밋이 존재할 때 입니다.
+
+<img src='https://wikidocs.net/images/page/153693/05.03.03.jpg'>
+
+위 사진에선 base를 기준으로 master와 dev1으로 브랜치가 분기해 나가고 있습니다. 서로 다른 분기의 커밋이 존재하기 때문에 병합 도중 새로운 커밋이 생길 것이고, 충돌이 일어날 수 있습니다.
+또한 base가 다르기 때문에 fast-forward merge는 불가능 하겠죠?
+저희는 base, master, dev1를 비교해 병합을 진행해야 하기 때문에 이 상황을 3-way merge라고 부릅니다.
+
+<img src='https://wikidocs.net/images/page/153693/05.03.05.jpg'>
+
+master에서 진행한 작업과 dev1에서 진행한 작업 중 겹치는 작업 스코프가 존재한다면 두 브랜치에서 변경된 C라는 파일에 대해서 충돌이 발생할 수 있습니다.
+병합을 진행하는데 두 브랜치에서의 작업 내용이 다르기 때문입니다. 이 경우 3-way merge를 진행하기 위해서 충돌을 해결해야 합니다.
+
+그 방법은 이후 merge conflict에서 알아봅시다.
+
+
 ## Git Branch 전략
 
 ### 개요
