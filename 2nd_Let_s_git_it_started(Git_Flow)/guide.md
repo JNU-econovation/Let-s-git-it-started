@@ -449,7 +449,7 @@ fast-forward상태에서 병합을 진행하면 master의 head가 dev1을 참조
 
 <img src='https://wikidocs.net/images/page/153693/05.03.03.jpg'>
 
-위 사진에선 base를 기준으로 master와 dev1으로 브랜치가 분기해 나가고 있습니다. 서로 다른 분기의 커밋이 존재하기 때문에 병합 도중 새로운 커밋이 생길 것이고, 충돌이 일어날 수 있습니다.
+위 사진에서는 base를 기준으로 master와 dev1으로 브랜치가 분기해 나가고 있습니다. 서로 다른 분기의 커밋이 존재하기 때문에 병합 도중 새로운 커밋이 생길 것이고, 충돌이 일어날 수 있습니다.
 또한 base가 다르기 때문에 fast-forward merge는 불가능 하겠죠?
 저희는 base, master, dev1를 비교해 병합을 진행해야 하기 때문에 이 상황을 3-way merge라고 부릅니다.
 
@@ -460,6 +460,45 @@ master에서 진행한 작업과 dev1에서 진행한 작업 중 겹치는 작�
 
 그 방법은 이후 merge conflict에서 알아봅시다.
 
+### Merge Conflict
+
+깃을 이용하면서 conflict가 일어나지 않도록 관리한다면 좋겠지만, 공동 작업에서 저희는 어떤 방식으로든 conflict를 마주할 수 밖에 없습니다.
+
+<img src='../2nd_Let_s_git_it_started(Git_Flow)/images/conflict - 1.png'>
+
+위 상황은 tony의 작업 내용과 저의 작업 내용을 병합하는 과정입니다.
+만약 tony와 제가 B라는 파일을 동시에 작업했다면 일치하지 않는 내용이 반드시 생길 것 입니다.
+
+<img src='../2nd_Let_s_git_it_started(Git_Flow)/images/conflict - 2.png'>
+
+이런 상황에서 병합이나 pull을 시도한다면 B의 작업 내용에 대해 conflict가 발생합니다.
+
+그렇다면 conflict를 어떻게 해결할 수 있을지 생각해봅시다.
+
+해결 방법은 간단합니다.
+
+<img src='https://mblogthumb-phinf.pstatic.net/MjAxODA0MTdfMjc0/MDAxNTIzOTM1MTEyMTQ4.1f9r3nmx5MSdgGqYy-hC-Zyz0HPBm5lxI8wLpZbAJo0g.fp5C3wDaGBq5ymg8TAHKL4Vuf2yavxjGU16ByLSLgKQg.PNG.beaqon/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2018-04-17_%EC%98%A4%EC%A0%84_9.50.29.png?type=w800'>
+
+<<<<<<<와 ======= 사이에는 여러분의 로컬 환경의 수정사항들을 가르킵니다. 이 수정사항들은 아직 원격 저장소에 반영되지 않은 상태입니다. ======= 와 >>>>>>> 사이에는 원격 저장소 또는 다른 브랜치의 수정사항들을 가르킵니다. 이제 여러분은 2개의 섹션들을 확인하여 결정을 내려야 합니다.
+
+위와 같은 conflict가 발생했다면 저희는 두 가지 timeCreated 중에서 하나를 선택할 수 가 있습니다. 그렇다면 저희가 conflict를 해결할 수 있는 방법은
+
+1. tony의 작업 내용 (incoming)을 반영
+2. 나의 작업 내용 (current)을 반영
+
+만약 1번에 따라 tony의 작업내용을 살린다면 현재 변경 사항인
+
+```
+timeCreated: 1522044498
+```
+
+을 제거해주시면 되겠습니다.
+
+반대로 저의 작업내용을 살리려 한다면 incoming, 즉 수신 변경 사항을 제거해주고 다시 병합을 진행하면 되겠죠.
+
+만약 두 내용을 모두 살리고자 한다면 conflict를 나타내는 기호들을 모두 지워주시면 됩니다.
+
+이처럼 conflict를 해결하기 위해서는 incoming한 내용과 나의 current 작업 내용들을 비교하는 것이 중요합니다.
 
 ## Git Branch 전략
 
