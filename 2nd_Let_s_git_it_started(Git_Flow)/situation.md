@@ -28,10 +28,5 @@
 
 ## [Final STEP]
 
-- 여기서 잠깐, 회장단이 마지막으로 주는 ❗퀴즈 ❗
-회장, 부회장, 총무의 나이 모두 합한 숫자를 [answer2.md](http://answer2.md) 파일 8번 문제의 답으로 작성해 주세요!
-단) 주어진 조건에서 해결하시오.
-- Hotfix branch를 사용하여 [answer2.md](http://answer2.md) 파일 8번 문제를 해결할 것
-- Hotfix branch는 main branch(HEAD)의 기준에서 생성할 것
-- 문제를 해결했다면 main으로 pr보낸 후 merge
-- 모든 과정을 해결했다면 당신은 이제 깃 마스터!  사용했던 Hotfix branch를 삭제해 주시고, 각 팀의 레포지토리 링크를 ❗JNU-econovation/Let-s-git-it-started [이슈](https://github.com/JNU-econovation/Let-s-git-it-started/issues)에 등록해 주세요~ 고생하셨습니다!
+- 여기서 잠깐, 회장단이 마지막으로 주는 ❗퀴즈❗
+#TBA
