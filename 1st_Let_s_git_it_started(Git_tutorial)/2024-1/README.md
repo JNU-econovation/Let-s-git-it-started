@@ -8,7 +8,10 @@
 (NAME_profile.md 형태이고, NAME에는 본인의 이름을 모두 영어로 입력해주셔야 합니다!)
 
 ex)
+
 KimJongMin_profile.md
+
 LeeJinHyeok_prifile.md
+
 ParkMinGyu_profile.md
 
