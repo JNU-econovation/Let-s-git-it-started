@@ -11,8 +11,6 @@
 >
 > 다들 처음 Git/GitHub을 접했을 때 어려운 것은 당연해요! 두려워하지 말고 Git/GitHub을 도전해보아요.
 
-
-
 **목차 구성**
 
 - [Git/GitHub이란?](#Git/GitHub이란?)
@@ -24,7 +22,6 @@
 - [Git Rebase](#Git-Rebase)
 - [Git Branch 전략](#Git-Branch-전략)
 
-
 ## Git/GitHub이란?
 
 - Git: 버전관리 시스템(프로그램)
@@ -34,9 +31,7 @@
 
 Git은 소스코드를 효과적으로 관리하기 위해 개발된 **분산형 버전 관리 시스템(Distributed Version Control)**입니다.
 
-버전 관리 시스템은 왜 필요할까요? 만약 버전관리시스템이 없다면 폴더별로 버전의 이름을 붙여서 하나씩 관리하는 경우가 많았습니다. 마치 저희가 작업 폴더를 `최종`,` 최_최종`,`정말_최종` 이렇게 관리하는 것처럼요! 만약 그렇게한다면 불편한 점들이 생기겠죠? 
-
-
+버전 관리 시스템은 왜 필요할까요? 만약 버전관리시스템이 없다면 폴더별로 버전의 이름을 붙여서 하나씩 관리하는 경우가 많았습니다. 마치 저희가 작업 폴더를 `최종`,` 최_최종`,`정말_최종` 이렇게 관리하는 것처럼요! 만약 그렇게한다면 불편한 점들이 생기겠죠?
 
 그래서 등장한 것이...
 
@@ -48,46 +43,31 @@ Git은 소스코드를 효과적으로 관리하기 위해 개발된 **분산형
 
 **Distributed Version Control**입니다.
 
-서버에만 히스토리가 있는 것이 아니라 모든 개발자들이 동일한 히스토리를 갖도록 하는거죠. 만약 서버에 문제가 생겨도 각각의 개발자들이 동일한 히스토리를 가지고 있기 때문에, 작업을 이어갈 수 있습니다. 
+서버에만 히스토리가 있는 것이 아니라 모든 개발자들이 동일한 히스토리를 갖도록 하는거죠. 만약 서버에 문제가 생겨도 각각의 개발자들이 동일한 히스토리를 가지고 있기 때문에, 작업을 이어갈 수 있습니다.
 
 이러한 서버를 제공해주는 서비스로 [GitHub](https://github.com/)과 [Bitbucket](https://bitbucket.org/)과 같은 클라우드가 있습니다.
 
 <details>
 <summary>Git은 어떻게 만들어졌을까요?</summary>
 <div markdown="1">
-리눅스 창시자 Linux Torvalds는 CVS(Cen)  
 </div>
 </details>
 
-  
+내용 추가중 입니다.
 
-  
-
-  
-
-
-  리눅스 창시자 Linus Torvalds는 CVS(Cen)
-
-- 기존의 버리 관리시스템은 델타 베이스
-- hello 
-</details>  
-
-
+<!-- 리눅스 창시자 Linus Torvalds는 CVS(Cen)  -->
+</details>
 
 ### GitHub
 
-
-
 그럼 Git과 GitHub을 왜 사용할까요?
 
--  가장 대중적이며 많이 사용됩니다.
+- 가장 대중적이며 많이 사용됩니다.
 - 오픈소스이므로 무료입니다.
-- 모든 종작이 빠릅니다.
+- 모든 동작이 빠릅니다.
 - 오프라인으로 사용할 수 있습니다.
 - 실수를 고치기가 쉽습니다.
 - 각 기능별 브랜치로 쉽고 빠르게 협업 효율을 높일 수 있습니다.
-
-
 
 ## 주요 용어와 개념
 
@@ -125,13 +105,9 @@ Git은 **local Repository**, **remote Repository** 두 종류의 저장소로 �
 
 자신의 PC 저장소에서 작업하다가 작업한 내용을 공유하고 싶을 때 원격 저장소에 업로드하면 되겠죠? 물론 원격 저장소에서 다른 사람이 파일을 로컬 저장소로 가져올 수도 있습니다.
 
-
-
 ## 시작하기
 
 이제 Git을 본격적으로 사용해봅시다.
-
-### Git 설치
 
 ### Git 설치
 
@@ -143,8 +119,6 @@ Git을 비롯해 최근 개발에 많이 사용되는 방식은 CLI(Command Line
 
 - Windows는 Git bash를, Mac은 터미널을 사용합니다.
 
-  
-
 ### 환경 설정
 
 처음 git을 사용할 때 사용자 이름과 email 주소를 지정해야 합니다.
@@ -153,8 +127,6 @@ Git을 비롯해 최근 개발에 많이 사용되는 방식은 CLI(Command Line
 git config --global user.name "이름"
 git config --global user.email "이메일주소"
 ```
-
-
 
 ### Repository 생성
 
@@ -168,19 +140,19 @@ cd test			# cd: change_directory, test 디렉토리로 이동한다.
 git init		# 작업 디렉토리로 설정한다.
 ```
 
-/* 이미지 추가*/
+/_ 이미지 추가_/
 
 #### Remote Repository 생성
 
+공통으로 관리할 저장소를 사용하기 위해, Remote Repository를 생성합니다. 우리에게 가장 친숙한 Github에서 만들 수 있습니다.
 
+[공식문서](https://docs.github.com/en/get-started/quickstart/create-a-repo)를 참고해 만들어 보세요.
 
 #### Remote Repository 연결
 
-앞에서 원격 저장소를 소개했죠? 
+앞에서 원격 저장소를 소개했죠?
 
 우리는 github 서버에 Working Directory에서 작업한 내용을 관리하려고 합니다. 이 작업을 하기 위해서 github에 remote repository를 생성해야 합니다.
-
-
 
 ## Git 브랜치
 
@@ -188,13 +160,11 @@ Git의 최고 장점이라고 평가되는 브랜치는 무엇일까요?
 
 개발을 하다보면 코드를 여러 개 복사하고 원래 코드와 상관없이 독립적으로 개발을 진행해야 하는 상황이 생길 수 있습니다. 예를들어 현재 개발된 홈페이지에 A와 B가 새로운 기능을 추가하고 싶은 것처럼요!
 
-기본적으로 Git은 `main` 브랜치를 생성합니다. 처음 커밋하면 이 `main` 브랜치는 생성된 커밋을 가리킵니다. 이후 커밋이 생성되면 `main` 브랜치는 자동으로 가장 마지막 커밋을 가리킵니다.
+기본적으로 Git은 `main` 브랜치를 생성합니다. 처음 커밋하면 이 `main` 브랜치는 생성된 커밋을 가리킵니다. 이후 커밋이 생성되면 `main` 브랜치는 자동으로 가장 최신 커밋을 가리킵니다.
 
 ![브랜치 커밋 히스토리 이미지 추가](https://user-images.githubusercontent.com/79842129/234327942-1504dd26-f83e-4584-a02a-f0182167b636.svg)
 
-HEAD는 특정 브랜치의 마지막 커밋에 대한 포인터를 말합니다. 이 그림에서는 main 브랜치의 마지막 커밋인 `5f832d`를 가리키겠네요!
-
-
+HEAD는 현재 내가 선택한 브랜치의 최신 커밋에 대한 포인터를 말합니다. 이 그림에서는 main 브랜치의 가장 최신 커밋인 `5f832d`를 가리키겠네요!
 
 > **브랜치 생성**
 
@@ -206,15 +176,13 @@ git branch {생성할 브랜치 이름}
 
 ![브랜치 생성 이미지](https://user-images.githubusercontent.com/79842129/234328417-c6861bb7-8035-4611-a050-c60776ba8bc7.svg)
 
-새로 만든 브랜치도 지금 작업하고 있던 마지막 커밋을 가리키는 것을 확인할 수 있습니다.
-
-
+새로 만든 브랜치도 지금 작업하고 있던 최신 커밋을 가리키는 것을 확인할 수 있습니다.
 
 > **브랜치 이동**
 
-이제 생성된 브랜치로 이동해볼까요? 
+이제 생성된 브랜치로 이동해볼까요?
 
-switch 명령어를 이용해서 현재 작업중인(=HEAD가 가리키는) 브랜치를 이동해봅시다.
+switch 명령어를 이용해서 생성된 브랜치로 이동해봅시다.
 
 ```bash
 git switch {이동할 브랜치 이름}
@@ -222,25 +190,19 @@ git switch {이동할 브랜치 이름}
 
 ![checkout 브랜치 이미지](https://user-images.githubusercontent.com/79842129/234328717-930253fc-5050-475d-8c9c-54bb155efdfd.svg)
 
-
-
 +) `git switch -b {브랜치 이름}` 명령어를 사용하면, 브랜치를 생성하고 동시에 이동할 수 있답니다.
-
-
 
 ### 브랜치는 왜 필요할까요?
 
 여러명이 동시에 개발하는 상황을 떠올려볼까요? 아마 누군가는 '회원 가입'을, 누군가는 '채팅 기능'을 만드는 것으로 역할 분담할 수 있을 것입니다. 여러 명이서 동시에 작업할 때 다른 사람의 작업에 영향을 주거나 받지 않도록 각자 작업 브랜치를 만들고 메인 브랜치에 자신의 변경 사항을 적용합니다.
 
-이렇게 하면 다른 사람의 작업에 영향을 받지 않고 독립된 작업을 수행할 수 있고, 작업이 완료되면 그 결과를 하나로 모을 수 있겠죠. 
+이렇게 하면 다른 사람의 작업에 영향을 받지 않고 독립된 작업을 수행할 수 있고, 작업이 완료되면 그 결과를 하나로 모을 수 있겠죠.
 
 이러한 방식으로 작업하면 '작업 단위', 즉 브랜치로 그 작업 기록을 중간 중간 남기게 되므로 문제가 발생했을 때 원인이 되는 작업을 찾고 그에 따른 대책을 쉽게 세울 수 있습니다.
 
 ![브랜치 필요성](https://user-images.githubusercontent.com/79842129/234329319-d880441e-5c2b-4af0-94f8-c87e88b4e9f6.svg)
 
 +) 이처럼 브랜치를 생성할 때 규칙을 만들어 효과적으로 협업하는 방법을 [Git 브랜치 전략](https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-github-flow-git-flow-%F0%9F%93%88-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5)이라고 합니다.
-
-
 
 ## Git 명령어
 
@@ -254,12 +216,9 @@ git switch {이동할 브랜치 이름}
    git init
    ```
 
-   
-
-2. `.git` 디렉토리가 생성됩니다. Git이 현재 디렉토리의 변동사항을 계속 파악하고 있다는 의미입니다. 
+2. `.git` 디렉토리가 생성됩니다. Git이 현재 디렉토리의 변동사항을 계속 파악하고 있다는 의미입니다.
 
    - `.git` 디렉토리는 숨겨진 디렉토리입니다. 일반적인 `ls` 명령만으로는 디렉토리가 조회되지 않습니다. 따라서 `ls -al` 을 입력하여 확인 가능합니다.
-
 
 git init을 하기 전 디렉터리 모습입니다.
 ​<img width="739" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/daaad882-838b-41cc-b39e-b30d77481d0d">
@@ -269,7 +228,6 @@ git init을 하기 전 디렉터리 모습입니다.
 
 이후 아래와 같이 .git 디렉터리가 생성됨을 알 수 있습니다.
 <img width="733" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/7775481b-a13e-47bd-9e54-b1499dab4edd">
-
 
 ### git remote add {등록 이름} {원격 저장소 주소}
 
@@ -283,8 +241,6 @@ git remote add {등록 이름} {원격 저장소 주소}
   - git clone을 이용하여 프로젝트를 가져올 경우 자동으로 remote 저장소의 이름이 origin으로 등록됩니다.
 - 원격 저장소 주소: GitHub repository 주소를 말합니다.
 
-
-
 ### git clone {원격 저장소 주소} {복제 경로}
 
 GitHub 원격 저장소에 있는 내용들을 로컬에 복제해오는 것을 말합니다.
@@ -295,13 +251,11 @@ GitHub 원격 저장소에 있는 내용들을 로컬에 복제해오는 것을 
 git clone {원격 저장소 주소}
 ```
 
-
-
 ### git add
 
-작업 디렉토리의 변경 내용을 스테이징 영역에 추가하기 위해 사용하는 명령어입니다. 
+작업 디렉토리의 변경 내용을 스테이징 영역에 추가하기 위해 사용하는 명령어입니다.
 
-스테이징 영역은 변경 사항 중에 '저장하고 싶은 부분만 선택해 임시로 저장'할 수 있는 공간인데요.  이미 로컬 저장소와 원격 저장소가 존재하는데, 왜 별도의 공간이 필요한지 궁금하실 것 같네요. 자세한 내용은 [Git의 Staging Area는 어떤 점이 유용한가](https://blog.npcode.com/2012/10/23/git%EC%9D%98-staging-area%EB%8A%94-%EC%96%B4%EB%96%A4-%EC%A0%90%EC%9D%B4-%EC%9C%A0%EC%9A%A9%ED%95%9C%EA%B0%80/)에 정리되어 있으니 참고하시면 좋을 것 같습니다~
+스테이징 영역은 변경 사항 중에 '저장하고 싶은 부분만 선택해 임시로 저장'할 수 있는 공간인데요. 이미 로컬 저장소와 원격 저장소가 존재하는데, 왜 별도의 공간이 필요한지 궁금하실 것 같네요. 자세한 내용은 [Git의 Staging Area는 어떤 점이 유용한가](https://blog.npcode.com/2012/10/23/git%EC%9D%98-staging-area%EB%8A%94-%EC%96%B4%EB%96%A4-%EC%A0%90%EC%9D%B4-%EC%9C%A0%EC%9A%A9%ED%95%9C%EA%B0%80/)에 정리되어 있으니 참고하시면 좋을 것 같습니다~
 
 > 특정 파일만 스테이징 하기(특정 파일의 변경 사항만 스테이징)
 
@@ -309,15 +263,11 @@ git clone {원격 저장소 주소}
 git add {파일명}
 ```
 
-
-
 > 저장소 내 모든 파일 스테이징 하기(모든 파일의 변경 사항을 스테이징)
 
 ```bash
 git add .
 ```
-
-
 
 ### git commit
 
@@ -325,16 +275,14 @@ git add .
 
 `commit`은 파일 및 폴더의 추가/변경 사항을 저장소에 기록하는 명령어입니다. 즉 스테이징된 파일을 저장소로 옮기는 작업입니다.
 
--  `-m` 옵션: `commit` 명령어와 함께 사용하는 옵션입니다. 저장소로 파일을 옮길 때 해당 커밋의 메시지를 작성할 수 있도록 합니다. 메시지는 ""(큰 따옴표) 안에 작성합니다.
+- `-m` 옵션: `commit` 명령어와 함께 사용하는 옵션입니다. 저장소로 파일을 옮길 때 해당 커밋의 메시지를 작성할 수 있도록 합니다. 메시지는 ""(큰 따옴표) 안에 작성합니다.
 - 만약 옵션이 없다면, vim 에디터로 연결되며 한줄로 표현하기 어려운 메시지를 자세하게 설명할 수 있습니다.
 
 ```bash
 git commit -m "커밋 메시지 내용"
 ```
 
-커밋 메시지를 작성하는 것은 정말 중요합니다! 마치 역할분담하여 과제할 때, 자신이 맡은 작업물만 달랑 주기보다는 '어떤 작업을 했는지' 설명하는 것처럼요. 그래서 커밋 메시지 규칙도 있답니다.(참고: [How to Wriate a Git Commit Message](https://cbea.ms/git-commit/)) 
-
-
+커밋 메시지를 작성하는 것은 정말 중요합니다! 마치 역할분담하여 과제할 때, 자신이 맡은 작업물만 달랑 주기보다는 '어떤 작업을 했는지' 설명하는 것처럼요. 그래서 커밋 메시지 규칙도 있답니다.(참고: [How to Write a Git Commit Message](https://cbea.ms/git-commit/))
 
 ### git status
 
@@ -342,7 +290,7 @@ Staged, Unmodified 등 파일들의 상태(status)를 확인하는 명령어입�
 
 지금까지 add, commit 명령어를 공부하면서 '스테이징 영역'이라는 단어를 들어봤을 것입니다. 또 '변경 사항을 감지하여 기록한다'는 등 이런 이야기도 들어봤을 것입니다.
 
-이처럼 git으로 관리하는 파일들은 다음의 상태(status)를 갖습니다. 
+이처럼 git으로 관리하는 파일들은 다음의 상태(status)를 갖습니다.
 
 **[git으로 관리하는 파일 상태]**
 
@@ -353,18 +301,18 @@ Staged, Unmodified 등 파일들의 상태(status)를 확인하는 명령어입�
   - **Staged**: 스테이징 영역(커밋 직전 저장소)에 올라간 상태
 
 <img width="753" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/47850e2a-5ae7-47f0-be43-95e7645e2b90">
-만약 1) <u>처음 저장소를 clone</u>해오게 되면, 모든 파일은 **Tracked**이면서 **Unmodified** 상태가 됩니다. 이 상태에서 2) <u>어떤 파일을 수정하면</u> 해당 파일은 **Tracked**이면서 **Modified** 상태가 됩니다. 실제로 3) <u>원격 저장소에 변경 내용을 반영하기 위해서</u> 수정한 파일을 **Staged** 상태로 만들고, Staged 상태의 파일을 **commit**해야 합니다.  
+
+만약 1) <u>처음 저장소를 clone</u>해오게 되면, 모든 파일은 **Tracked**이면서 **Unmodified** 상태가 됩니다. 이 상태에서 2) <u>어떤 파일을 수정하면</u> 해당 파일은 **Tracked**이면서 **Modified** 상태가 됩니다. 실제로 3) <u>원격 저장소에 변경 내용을 반영하기 위해서</u> 수정한 파일을 **Staged** 상태로 만들고, Staged 상태의 파일을 **commit**해야 합니다.
 
 > 변경 사항이 없을 경우
-Remote Repository를 Clone한 상황
-<img width="873" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/461598c8-25f4-4a36-b17d-dfffca2e294f">
+> Remote Repository를 Clone한 상황
+> <img width="873" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/461598c8-25f4-4a36-b17d-dfffca2e294f">
 
 > 변경 사항이 있을 경우
 
 clone한 local repository에서 새로운 파일을 생성하였습니다.
 이 경우 새로운 파일은 아직 Git이 인식하지 못 하는 파일이기 때문에 Untracked File(추적하지 않는 파일)로 뜹니다.
 <img width="918" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/024e32bb-f0da-4203-9ba0-98b26b5d5f95">
-
 
 > git add를 진행하지 않은 상태
 
@@ -374,12 +322,9 @@ clone한 local repository에서 새로운 파일을 생성하였습니다.
 이 경우는 Tracked File이지만, 변경사항이 존재할 경우 아래와 같은 응답이 발생합니다.
 <img width="589" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/4a58732e-acb1-4f9c-93df-63139dcabe8e">
 
-
-
 > git add를 진행한 상태
-staged(스테이징 됨) 상태가 된 것을 확인할 수 있습니다. 즉 커밋할 준비가 된 상태입니다.
-<img width="617" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/f5049b6d-25ee-4507-95d9-63398d9780d6">
-
+> staged(스테이징 됨) 상태가 된 것을 확인할 수 있습니다. 즉 커밋할 준비가 된 상태입니다.
+> <img width="617" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/f5049b6d-25ee-4507-95d9-63398d9780d6">
 
 ### git branch
 
@@ -390,23 +335,24 @@ staged(스테이징 됨) 상태가 된 것을 확인할 수 있습니다. 즉 �
 ```bash
 git branch {브랜치명}
 ```
+
 <img width="1088" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/e225bad2-de88-4aca-8179-dee042771546">
- 
 
 > 브랜치 확인하기
 
 ```bash
 git branch
 ```
+
 <img width="721" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/5e05c2c4-de77-40e1-bf0d-694caf20545a">
 <img width="338" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/1fecfcdc-3e05-420e-bdd8-828bb6bddbc1">
-
 
 > 브랜치 삭제하기
 
 ```bash
 git branch -d {브랜치명}
 ```
+
 주의할 점은 현재 삭제할 브랜치에 있으면 안 됩니다.
 <img width="942" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/be2b8c2c-ac59-4734-892a-6b098c37d607">
 
@@ -415,78 +361,186 @@ git branch -d {브랜치명}
 
 ### git switch
 
-현재 작업중인 브랜치를 가리키는 포인터를 HEAD라고 합니다. 
-작업중인 브랜치에서 다른 브랜치로 이동하려면 HEAD를 이동시키면 됩니다. 
+현재 작업중인 브랜치를 가리키는 포인터를 HEAD라고 합니다.
+작업중인 브랜치에서 다른 브랜치로 이동하려면 HEAD를 이동시키면 됩니다.
 
 > 브랜치 이동하기
 
 ```bash
 git switch {브랜치명}
 ```
+
 <img width="764" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/3b3dc99d-9631-432a-a529-376f5f78dcb3">
 
-기존 main 브랜치에서 /* 변경된 브랜치명*/으로 이동된 것을 확인할 수 있습니다. 
+기존 main 브랜치에서 /_ 변경된 브랜치명_/으로 이동된 것을 확인할 수 있습니다.
 
 브랜치 이동은 현재 존재하는 브랜치들 중에서 이동할 수 있습니다. 만약 switch 하려는 브랜치가 없다면 이동할 수 없겠죠.
 <img width="778" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/4d4fff64-1e89-4fbe-b7fe-eefe89a68149">
 
-
 > git pull origin {브랜치명}
-remote repo에서 데이터를 가져올 뿐만 아니라(git fetch) 변경된 내용을 local repo의 내용과 병합한다.(git merge)
-<img width="574" alt="image" src="https://github.com/JNU-econovation/gitPractice/assets/88534959/cef0ec2a-c9f3-4397-8eb2-9747a082cd12">
-
+> remote repo에서 데이터를 가져올 뿐만 아니라(git fetch) 변경된 내용을 local repo의 내용과 병합한다.(git merge)
+> <img width="574" alt="image" src="https://github.com/JNU-econovation/gitPractice/assets/88534959/cef0ec2a-c9f3-4397-8eb2-9747a082cd12">
 
 > git log
 
-저장소의 커밋 히스토리를 시간순으로 볼 수 있다. 
+저장소의 커밋 히스토리를 시간순으로 볼 수 있다.
 <img width="707" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/1642b5cc-335f-4bfc-827f-311de97dd110">
 <img width="829" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/5edb1d85-c78b-414d-8795-bc568b2a6703">
 
 <img width="773" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/ae4b50f8-8439-4f5f-a82a-ec0b832b5b3f">
 <img width="961" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/88534959/a9b1a7d2-2cfe-4112-ab9b-1f3fa117caad">
 
-
 ### git diff
+
 해당 명령어를 사용하면 Working Directory와 Staging Area 사이의 차이를 확인하기 위한 명령어
 <img width="697" alt="image" src="https://github.com/JNU-econovation/weekly_presentation/assets/88534959/639c6d63-8637-45c2-abab-f7ca59857907">
 <img width="1222" alt="image" src="https://github.com/JNU-econovation/weekly_presentation/assets/88534959/f12bd52d-787c-4810-bb51-867999a589d0">
 
-
-
-### git reset [mode] [commit] 
+### git reset [mode] [commit]
 
 해당 명령어는 현재 브랜치 헤드를 [commit]으로 재설정하고 [mode]에 따라 인덱스([commit]의 트리로 재설정)와 작업 트리를 업데이트할 수 있습니다. 작업 전, ORIG_HEAD는 현재 분기의 끝으로 설정됩니다. [mode]를 생략하면 기본값은 --mixed입니다. [mode]는 다음 중 하나이어야 합니다.
 
-
 - soft  
-인덱스 파일이나 작업 트리를 전혀 건드리지 않습니다(하지만 모든 모드와 마찬가지로 헤드를 [commit]으로 재설정합니다). 이렇게 하면 변경된 모든 파일이 "커밋할 변경 사항"으로 남게 됩니다. 
+  인덱스 파일이나 작업 트리를 전혀 건드리지 않습니다(하지만 모든 모드와 마찬가지로 헤드를 [commit]으로 재설정합니다). 이렇게 하면 변경된 모든 파일이 "커밋할 변경 사항"으로 남게 됩니다.
 
-
-
-- mixed   
-인덱스는 재설정하지만 작업 트리는 재설정하지 않고(즉, 변경된 파일은 보존되지만 커밋으로 표시되지 않음) 업데이트되지 않은 내용을 보고합니다. 이것이 기본 동작이다.
-
+- mixed  
+  인덱스는 재설정하지만 작업 트리는 재설정하지 않고(즉, 변경된 파일은 보존되지만 커밋으로 표시되지 않음) 업데이트되지 않은 내용을 보고합니다. 이것이 기본 동작이다.
 
 - hard  
   인덱스와 작업 트리를 재설정합니다. <commit> 이후 작업 트리에서 추적된 파일에 대한 모든 변경 사항은 삭제됩니다. 적되지 않은 파일이나 디렉토리는 추적된 파일을 작성하는 과정에서 간단히 삭제됩니다.
 
-
-
 ### Git Merge
-명명된 커밋(현재 브랜치에서 히스토리가 갈라진 시점부터)의 변경 내용을 현재 브랜치에 통합한다. 이 명령은 다른 리포지토리의 변경 내용을 통합하기 위해 git pull에서 사용되며, 한 브랜치의 변경 내용을 다른 브랜치에 병합하기 위해 수동으로 사용할 수도 있다.
-      
+
+명명된 커밋(현재 브랜치에서 히스토리가 갈라진 시점부터)의 변경 내용을 현재 브랜치에 통합하는 과정입니다. 이 명령은 다른 리포지토리의 변경 내용을 통합하기 위해 git pull에서 사용되며, 한 브랜치의 변경 내용을 다른 브랜치에 병합하기 위해 수동으로 사용할 수도 있습니다.
+
 다음 히스토리가 존재하고 현재 브랜치가 "마스터"라고 가정합니다.
 
 <img width="242" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/86696759/b0a4f8a4-370a-4d90-b1e6-2de7df360e21">
 
-그런 다음 "git merge topic"은 토픽 브랜치가 마스터(즉, E)에서 분기된 이후부터 마스터 위에 있는 현재 커밋(C)까지의 변경 내용을 재생하고, 두 부모 커밋의 이름과 변경 내용을 설명하는 사용자의 로그 메시지와 함께 결과를 새 커밋에 기록한다. 작업 전에 ORIG_HEAD는 현재 브랜치(C)의 끝으로 설정된다.
+그런 다음 "git merge topic"은 토픽 브랜치가 마스터(즉, E)에서 분기된 이후부터 마스터 위에 있는 현재 커밋(C)까지의 변경 내용을 반영하고, 두 부모 커밋의 이름과 변경 내용을 설명하는 사용자의 로그 메시지와 함께 결과를 새 커밋에 기록합니다.
+
+작업 전에 ORIG_HEAD는 현재 브랜치(C)의 끝으로 설정됩니다.
+
 <img width="279" alt="image" src="https://github.com/JNU-econovation/Let-s-git-it-started/assets/86696759/379c46a5-c0e0-4143-87c3-493dddb915bf">
-두 번째 구문("git merge --abort")은 병합으로 인해 충돌이 발생한 후에만 실행할 수 있다. git merge --abort는 병합 프로세스를 중단하고 병합 전 상태를 재구성하려고 시도한다. 그러나 병합이 시작될 때 커밋되지 않은 변경 사항이 있는 경우(특히 병합이 시작된 후 변경 사항이 추가로 수정된 경우) git merge --abort는 경우에 따라 원래(병합 전) 변경 사항을 재구성할 수 없다.
 
+두 번째 구문("git merge --abort")은 병합으로 인해 충돌이 발생한 후에만 실행할 수 있다. git merge --abort는 병합 프로세스를 중단하고 병합 전 상태를 재구성하려고 시도한다.
 
+그러나 병합이 시작될 때 커밋되지 않은 변경 사항이 있는 경우(특히 병합이 시작된 후 변경 사항이 추가로 수정된 경우) `git merge --abort`는 경우에 따라 원래(병합 전) 변경 사항을 재구성할 수 없습니다.
+
+그렇다면 git merge에는 어떤 종류가 있을까요? 저희는 브랜치 병합을 시도할 때 크게 두 가지 상황을 마주할 수 있습니다.
+
+### fast-forward merge
+
+첫 번째 상황은 공통된 base를 가지고 있을 때 입니다. 여기서 base란 각 브랜치가 공통으로 참조하는 commit을 이야기합니다.
+
+<img src='https://wikidocs.net/images/page/153693/05.03.01.jpg'>
+
+위 상황에선 릴리즈된 master브랜치에서 분기해 나간 dev1 브랜치가 참조하는 base가 master와 일치합니다. 즉, 병합을 해도 새로운 커밋이 생겨나지 않고 충돌이 일어나지 않습니다.
+우리는 이런 상태를 fast-forward상태라고 합니다.
+
+<img src='https://wikidocs.net/images/page/153693/05.03.02.jpg'>
+
+fast-forward상태에서 병합을 진행하면 master의 head가 dev1을 참조하도록 이동할 뿐입니다.
+마치 빨리감기 하듯 병합이 되는 이 과정을 저희는 fast-forward라고 부릅니다.
+
+### 3-way merge
+
+두 번째 상황은 하나의 base에서 분기해나간 여러 개의 커밋이 존재할 때 입니다.
+
+<img src='https://wikidocs.net/images/page/153693/05.03.03.jpg'>
+
+위 사진에서는 base를 기준으로 master와 dev1으로 브랜치가 분기해 나가고 있습니다. 서로 다른 분기의 커밋이 존재하기 때문에 병합 도중 새로운 커밋이 생길 것이고, 충돌이 일어날 수 있습니다.
+또한 base가 다르기 때문에 fast-forward merge는 불가능 하겠죠?
+저희는 base, master, dev1를 비교해 병합을 진행해야 하기 때문에 이 상황을 3-way merge라고 부릅니다.
+
+<img src='https://wikidocs.net/images/page/153693/05.03.05.jpg'>
+
+master에서 진행한 작업과 dev1에서 진행한 작업 중 겹치는 작업 스코프가 존재한다면 두 브랜치에서 변경된 C라는 파일에 대해서 충돌이 발생할 수 있습니다.
+병합을 진행하는데 두 브랜치에서의 작업 내용이 다르기 때문입니다. 이 경우 3-way merge를 진행하기 위해서 충돌을 해결해야 합니다.
+
+그 방법은 이후 merge conflict에서 알아봅시다.
+
+### Merge Conflict
+
+깃을 이용하면서 conflict가 일어나지 않도록 관리한다면 좋겠지만, 공동 작업에서 저희는 어떤 방식으로든 conflict를 마주할 수 밖에 없습니다.
+
+<img src='../2nd_Let_s_git_it_started(Git_Flow)/images/conflict - 1.png'>
+
+위 상황은 tony의 작업 내용과 저의 작업 내용을 병합하는 과정입니다.
+만약 tony와 제가 B라는 파일을 동시에 작업했다면 일치하지 않는 내용이 반드시 생길 것 입니다.
+
+<img src='../2nd_Let_s_git_it_started(Git_Flow)/images/conflict - 2.png'>
+
+이런 상황에서 병합이나 pull을 시도한다면 B의 작업 내용에 대해 conflict가 발생합니다.
+
+그렇다면 conflict를 어떻게 해결할 수 있을지 생각해봅시다.
+
+해결 방법은 간단합니다.
+
+<img src='https://mblogthumb-phinf.pstatic.net/MjAxODA0MTdfMjc0/MDAxNTIzOTM1MTEyMTQ4.1f9r3nmx5MSdgGqYy-hC-Zyz0HPBm5lxI8wLpZbAJo0g.fp5C3wDaGBq5ymg8TAHKL4Vuf2yavxjGU16ByLSLgKQg.PNG.beaqon/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2018-04-17_%EC%98%A4%EC%A0%84_9.50.29.png?type=w800'>
+
+<<<<<<<와 ======= 사이에는 여러분의 로컬 환경의 수정사항들을 가르킵니다. 이 수정사항들은 아직 원격 저장소에 반영되지 않은 상태입니다. ======= 와 >>>>>>> 사이에는 원격 저장소 또는 다른 브랜치의 수정사항들을 가르킵니다. 이제 여러분은 2개의 섹션들을 확인하여 결정을 내려야 합니다.
+
+위와 같은 conflict가 발생했다면 저희는 두 가지 timeCreated 중에서 하나를 선택할 수 가 있습니다. 그렇다면 저희가 conflict를 해결할 수 있는 방법은
+
+1. tony의 작업 내용 (incoming)을 반영
+2. 나의 작업 내용 (current)을 반영
+
+만약 1번에 따라 tony의 작업내용을 살린다면 현재 변경 사항인
+
+```
+timeCreated: 1522044498
+```
+
+을 제거해주시면 되겠습니다.
+
+반대로 저의 작업내용을 살리려 한다면 incoming, 즉 수신 변경 사항을 제거해주고 다시 병합을 진행하면 되겠죠.
+
+만약 두 내용을 모두 살리고자 한다면 conflict를 나타내는 기호들을 모두 지워주시면 됩니다.
+
+이처럼 conflict를 해결하기 위해서는 incoming한 내용과 나의 current 작업 내용들을 비교하는 것이 중요합니다.
+
+### Git Rebase
+
+브랜치를 병합하는 또 다른 방법 중 하나는 Rebased입니다.
+
+<img src='https://camo.githubusercontent.com/7df3579a3aa6218b10a581d53067e94e72cb6703eed5b66121ff261c6dd6e3b4/68747470733a2f2f6769742d73636d2e636f6d2f626f6f6b2f656e2f76322f696d616765732f62617369632d7265626173652d312e706e67'>
+
+C3 에서 변경된 사항을 Patch로 만들고 이를 다시 C4 에 적용시키는 방법이 있습니다. Git에서는 이런 방식을 Rebase 라고 합니다. rebase 명령으로 한 브랜치에서 변경된 사항을 다른 브랜치에 적용할 수 있습니다.
+
+<img src='https://camo.githubusercontent.com/9805c3ef3c4724198e5c144467e61b7ecd1434131e26cd7bc22d3f2caa679281/68747470733a2f2f6769742d73636d2e636f6d2f626f6f6b2f656e2f76322f696d616765732f62617369632d7265626173652d332e706e67'>
+
+두 브랜치가 나뉘기 전인 공통 커밋으로 이동하고 나서 그 커밋부터 지금 Checkout 한 브랜치가 가리키는 커밋까지 diff를 차례로 만들어 어딘가에 임시로 저장해 놓습니다. Rebase 할 브랜치(experiment)가 합칠 브랜치(master)가 가리키는 커밋을 가리키게 하고 아까 저장해 놓았던 변경사항을 차례대로 적용합니다.
+
+Rebase의 다양한 명령어
+git reabse -i <수정을 시작할 커밋의 이전 커밋>
+해당 명령어를 사용하면 범위 안의 모든 커밋 리스트와 커맨드가 출력됩니다.
+
+<img src='https://camo.githubusercontent.com/08b2636b842bc6da871c9fd29f808cfdcc1c4f4d1d71865b7ddb4fbb3bc6f7ba/68747470733a2f2f643139347a656c6830367a756b7a2e636c6f756466726f6e742e6e65742f323031382f30352f6769742d7265626173652d692d6f7074696f6e2d322e706e67'>
+
+자주 사용하는 몇 가지만 알아봅시다.
+
+Reword
+
+커밋 메시지를 변경합니다.
+
+Edit
+
+커밋 메시지, 내용을 변경합니다.
+
+Squash
+
+범위 내의 커밋들을 하나의 커밋으로 합칩니다.
+
+🚨 주의 사항
+이전의 커밋 히스토리를 변경하기 때문에 항상 주의해서 사용하여야 합니다. 만약 이미 GitHub과 같은 원격 저장소에 push까지 한 커밋이라면 변경한 커밋들은 원격 저장소에 push되지 않을 것입니다. 커밋들을 다른 개발자들과 공유하고 있었다면 커밋 히스토리의 불일치가 발생해 충돌이 발생하기 쉽습니다.
 
 ## Git Branch 전략
+
+### 개요
+
 ### 0. git branch 전략이 뭔가요?
+
 git branch 전략은 여러 개발자가 하나의 저장소를 사용하는 환경에서 저장소를 효과적으로 활용하기 위해 나온 개념입니다.
 
 브랜치 전략이 없다면 어떤 브랜치에 push 해야 하는지, 또한 어떤 브랜치에서 pull을 해와서 개발을 시작해야 하는지 등부터 많은 혼란을 야기할 것입니다.
@@ -494,6 +548,7 @@ git branch 전략은 여러 개발자가 하나의 저장소를 사용하는 환
 이 문서에서는 Git Flow, GitHub Flow, GitLab Flow, Fork와 PR의 4가지 전략에 대해서 알아봅니다.
 
 ### 1. Git Flow
+
 git flow 전략에는 항상 유지되는 메인 브랜치들`(master, develop)`과 일정 기간동안만 유지되는 보조 브랜치들`(feature, release, hotfix)`이 있습니다. 보조 브랜치들은 필요할 때마다 생성되고, 역할을 다하면 삭제됩니다. 이 보조 브랜치 덕분에 병렬적인 업무가 가능해집니다.
 
 <p align="center"><img width="700" alt="Git Flow" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/3dc8b3c3-61c2-40de-bc49-5f1a3e0ec5b3"></p>
@@ -506,9 +561,7 @@ git flow 전략에는 항상 유지되는 메인 브랜치들`(master, develop)`
 
 각각의 브랜치를 자세히 알아봅시다.
 
-
 **메인 브랜치**
-
 
 <p align="center"><img width="500" alt="메인 브랜치" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/63516254-9b8b-4525-8036-ce0a465970b7"></p>
 
@@ -516,29 +569,23 @@ git flow 전략에는 항상 유지되는 메인 브랜치들`(master, develop)`
 - 처음 master 브랜치에서 분기하는 것으로 시작하며, 다음 버전 구현이 완료되어 배포를 하고 싶을 때 master로 다시 합치는 방식으로 운영됩니다.
 - develop 브랜치는 통합 브랜치의 역할을 하며, 평소에는 이 브랜치를 기반으로 개발을 진행합니다.
 
-  
-
 **보조 브랜치**
 
 1. **Feature 브랜치**
-  
+
 <p align="center"><img width="500" alt="Feature 브랜치" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/14eb6efa-3b6e-4a10-989c-e2b8d71f6316"></p>
 
-  - 하나의 기능을 개발하기 위한 브랜치입니다. develop 브랜치에서 생성하며, 기능이 개발 완료되면 다시 develop 브랜치로 merge 됩니다.
-  - 브랜치명은 보통 팀 컨벤션을 따릅니다. `ex) feature/login, feature/#1(issue 번호)`
-
-
+- 하나의 기능을 개발하기 위한 브랜치입니다. develop 브랜치에서 생성하며, 기능이 개발 완료되면 다시 develop 브랜치로 merge 됩니다.
+- 브랜치명은 보통 팀 컨벤션을 따릅니다. `ex) feature/login, feature/#1(issue 번호)`
 
 2. **Release 브랜치**
 
 <p align="center"><img width="500" alt="Release 브랜치" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/c4155bff-df63-4c0a-b326-c771cab7c64b"></p>
 
-  - 소프트웨어 배포를 준비하기 위한 브랜치입니다. 버전 이름을 수정하거나 배포전 사소한 버그를 수정하기 위해 사용됩니다.
-  -  develop 브랜치에서 생성하며, 배포 준비가 완료되었다면 master브랜치에 머지합니다. 이때, master 브랜치에는 태그를 이용하여 버전을 표시합니다. release 브랜치에서 기능을 점검하며 발견한 버그 수정 사항은 develop 브랜치에 대해서도 merge 작업을 수행해줍니다.
-  -  release 브랜치가 배포를 위한 준비를 하는 동안 develop 브랜치는 기능 개발을 지속할 수 있다는 장점이 있습니다.
-  -  네이밍은 주로 `release-1.2, release/1.2` 과 같은 형태로 생성합니다.
-
-
+- 소프트웨어 배포를 준비하기 위한 브랜치입니다. 버전 이름을 수정하거나 배포전 사소한 버그를 수정하기 위해 사용됩니다.
+- develop 브랜치에서 생성하며, 배포 준비가 완료되었다면 master브랜치에 머지합니다. 이때, master 브랜치에는 태그를 이용하여 버전을 표시합니다. release 브랜치에서 기능을 점검하며 발견한 버그 수정 사항은 develop 브랜치에 대해서도 merge 작업을 수행해줍니다.
+- release 브랜치가 배포를 위한 준비를 하는 동안 develop 브랜치는 기능 개발을 지속할 수 있다는 장점이 있습니다.
+- 네이밍은 주로 `release-1.2, release/1.2` 과 같은 형태로 생성합니다.
 
 3. **Hotfix 브랜치**
 
@@ -546,12 +593,11 @@ git flow 전략에는 항상 유지되는 메인 브랜치들`(master, develop)`
 
 - 이미 배포된 버전에 수정사항이 생겼을 경우, hotfix 브랜치를 사용하여 문제를 해결합니다.
 - master 브랜치에서 분기하여 hotfix 브랜치를 생성하며, 문제 해결이 완료되면 master과 develop 브랜치에 둘다 머지합니다. 이때 tag를 통해 관련 정보를 기록해 둡니다.
--  release 브랜치와 마찬가지로 hotfix 브랜치를 따로 운용함으로써, 핫픽스 업무와 관련없는 팀은 병렬적으로 기능 개발을 할 수 있습니다.
--  네이밍은 보통 `hotfix/v1.0.1` 과 같은 형태로 생성합니다.
-
-
+- release 브랜치와 마찬가지로 hotfix 브랜치를 따로 운용함으로써, 핫픽스 업무와 관련없는 팀은 병렬적으로 기능 개발을 할 수 있습니다.
+- 네이밍은 보통 `hotfix/v1.0.1` 과 같은 형태로 생성합니다.
 
 ### 2. GitHub Flow
+
 Git Flow는 명시적으로 버전관리가 필요한 스마트폰 어플리케이션, 오픈소스 라이브러리/프레임워크 등의 프로젝트에 적합합니다.
 **웹 어플리케이션은 특성상 사용자는 항상 최신의 단일 버전**만을 사용합니다. 즉, 여러 버전을 병렬적으로 지원할 필요가 없습니다. 또한 웹 어플리케이션은 하루에 몇번이고 릴리즈될 수 있습니다. 이런 특성을 바탕으로 웹 어플리케이션 개발에는 이제부터 소개할 GitHub flow 를 사용하는 것이 더 나은 방법일 수 있습니다.
 
@@ -562,18 +608,18 @@ Github Flow는 Git Flow와 다르게 굉장히 간단한 구조이며 Github �
 GitHub Flow에서 사용하는 브랜치는 다음과 같습니다.
 
 - **master branch**
-    - 배포를 위한 branch
-    - master 브랜치는 항상 최신 상태며, **stable** 상태로 product에 배포되는 브랜치 입니다.
-        - 즉, master의 **모든 커밋은 언제 배포하든 문제가 없어야 하고 언제든 브랜치를 새로 만들 수 있어야** 합니다. master 브랜치의 모든 커밋은 **빌드가 되고, 테스트를 통과**해야합니다.
-        - 테스트는 로컬에서 하는 것이 아니라 브랜치를 push 하고 Jenkins로 테스트 합니다.
-            
-          *[Jenkins](https://www.jenkins.io/) : 개발 작업 자동화 뿐 아니라 소스 코드 저장소 대한 지속적인 통합과 지속적인 배포 환경을 구축하기 위한 간단한 방법을 제공하는 도구*
+
+  - 배포를 위한 branch
+  - master 브랜치는 항상 최신 상태며, **stable** 상태로 product에 배포되는 브랜치 입니다.
+    - 즉, master의 **모든 커밋은 언제 배포하든 문제가 없어야 하고 언제든 브랜치를 새로 만들 수 있어야** 합니다. master 브랜치의 모든 커밋은 **빌드가 되고, 테스트를 통과**해야합니다.
+    - 테스트는 로컬에서 하는 것이 아니라 브랜치를 push 하고 Jenkins로 테스트 합니다.
+      _[Jenkins](https://www.jenkins.io/) : 개발 작업 자동화 뿐 아니라 소스 코드 저장소 대한 지속적인 통합과 지속적인 배포 환경을 구축하기 위한 간단한 방법을 제공하는 도구_
 
 - **Topic branch**
-    - **새로운 기능**을 개발할 때에는 **Topic 브랜치**를 master 브랜치로부터 생성합니다. Git Flow의 Feature 브랜치와 동일한 역할을 합니다.
-    - 체계적인 분류 없이 브랜치 하나에 의존하기 때문에 **브랜치 이름을 통해 의도를 명확하게** 드러내는 것이 매우 중요합니다.
-    - 브랜치 명으로는  **`user-content-cache-key`**, **`submodules-init-task`**, **`redis2-transition`** 등이 있습니다.
-    - Topic 브랜치의 커밋은 기능이 완성되지 않았더라도 **꾸준히 Push** 합니다. 노트북 분실, 작업 컴퓨터의 고장등의 위험으로 코드가 유실되는 것을 막아주고, 구성원 모두가 끊임없이 커뮤니케이션 할 수 있게 해줍니다.
+  - **새로운 기능**을 개발할 때에는 **Topic 브랜치**를 master 브랜치로부터 생성합니다. Git Flow의 Feature 브랜치와 동일한 역할을 합니다.
+  - 체계적인 분류 없이 브랜치 하나에 의존하기 때문에 **브랜치 이름을 통해 의도를 명확하게** 드러내는 것이 매우 중요합니다.
+  - 브랜치 명으로는  **`user-content-cache-key`**, **`submodules-init-task`**, **`redis2-transition`** 등이 있습니다.
+  - Topic 브랜치의 커밋은 기능이 완성되지 않았더라도 **꾸준히 Push** 합니다. 노트북 분실, 작업 컴퓨터의 고장등의 위험으로 코드가 유실되는 것을 막아주고, 구성원 모두가 끊임없이 커뮤니케이션 할 수 있게 해줍니다.
 
 ### 3. GitLab Flow
 
@@ -584,24 +630,77 @@ GitLab Flow는 GitFlow와 GitHub Flow의 **절충안**으로 등장한 git branc
 GitLab Flow에서 사용하는 브랜치는 다음과 같습니다.
 
 - **feature 브랜치**  
-GitLab Flow의 **모든 기능 구현**은 feature 브랜치에서 시작합니다. feature 브랜치는 master 브랜치에서 분기하고, 또한 feature 브랜치에서 구현한 기능을 master 브랜치로 merge합니다.
-    
+  GitLab Flow의 **모든 기능 구현**은 feature 브랜치에서 시작합니다. feature 브랜치는 master 브랜치에서 분기하고, 또한 feature 브랜치에서 구현한 기능을 master 브랜치로 merge합니다.
 - **master 브랜치**  
-Git Flow의 develop 브랜치와 동일한 역할을 하는 브랜치입니다. feature 브랜치에서 master 브랜치로 병합된 기능에 대해 **test를 진행**합니다.
+  Git Flow의 develop 브랜치와 동일한 역할을 하는 브랜치입니다. feature 브랜치에서 master 브랜치로 병합된 기능에 대해 **test를 진행**합니다.
 
 - **production 브랜치**  
-Git Flow의 master 브랜치와 동일한 역할을 하는 브랜치입니다. 테스트가 끝난 **기능을 배포**합니다.
+  Git Flow의 master 브랜치와 동일한 역할을 하는 브랜치입니다. 테스트가 끝난 **기능을 배포**합니다.
 
 - **pre-production 브랜치**  
-master 브랜치와 production 브랜치의 사이에 있는 브랜치입니다. master의 변경 사항을 바로 production에 병합하여 배포하는 대신, **test server에 배포하여 통합 테스트를 진행**하거나 **시간을 두고 반영**하도록 합니다.
+  master 브랜치와 production 브랜치의 사이에 있는 브랜치입니다. master의 변경 사항을 바로 production에 병합하여 배포하는 대신, **test server에 배포하여 통합 테스트를 진행**하거나 **시간을 두고 반영**하도록 합니다.
 
 ### 4. Fork와 Pull Request
 
 <p align="center"><img width="700" alt="Fork와 Pull Request" src="https://github.com/Hyeonz1/Android-Jetpack-Fundamentals-Training/assets/114472483/0e3b16c4-b039-4666-bf49-673e8bdaf855"></p>
-
 
 fork와 Pull Request 전략에서는 **브랜치 대신 fork와 Pull Request 기능**을 활용하여 협업합니다.
 
 - fork는 프로젝트 전체를 **나의 원격 Repository로 복제**할 수 있는 기능입니다.
 - Pull Request를 사용하여 **원래 프로젝트 Repository로 merge 요청**을 보낼 수 있습니다. 원래 프로젝트의 관리자는 내가 merge를 요청한 코드를 보고 merge를 허용 여부를 결정합니다.
 - fork와 헷갈릴 수 있는 명령어로 clone이 있습니다. clone은 **특정 원격 repository를 내 노트북에 복사**하여 새로운 로컬 저장소를 만드는 명령어입니다. 반면 fork는 **특정 원격 repository를 나의 원격 repository로 복제**해오는 명령입니다.
+
+### 우아하게 Pull Request 사용하기
+
+Pull Request는 어떻게 보면 협업의 단위입니다.
+
+대부분의 브랜치 전략에서 PR단위로 기능을 분배하고 리뷰하기 때문입니다. (물론 개인적인 생각입니다.)
+
+그러면 어떻게 하면 Pull Request를 잘 사용할 수 있을지 알아볼까요?
+
+**1. PR Template 만들기**
+
+프로젝트 최상단의 `.github` 디렉토리에 PR 템플릿을 추가할 수 있습니다. PR 템플릿을 추가한다면, 말그대로 팀 내의 Pull Request의 템플릿을 사용할 수 있어 중복 작성을 줄여주어 팀원들에게 편리함을 불어넣을 수 있겠죠?
+
+자세한 사항은 [공식문서(creating-a-pull-request-template-for-your-repository)](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)를 참고해주세요.
+
+**2. Pull Request 우아하게 작성하기**
+
+Pull Request도 하나의 문서입니다. 단순히 프로젝트에서 Merge를 하기위해 쓰는 것이 아닌, 팀에게 리뷰를 받고, 작업 이후 제3자가 **참고하는 문서** 라는 생각으로 작성해야 합니다.
+
+**PR 본문은 상세하게**
+
+보통 자신이 어떤 작업을 했고, 어떤 내역을 했는지 상세하게 설명합니다. 상대방은 지금 PR을 작성한 사람처럼 깊은 고민을 통해 코드를 작성한 사람이 아닙니다. 따라서 이해도에서 차이가 있을 수 있어요. 그래서 어떤 도메인을 알면 좋을지, 어떤 상황인지 등을 자세하게 설명해주면 좋겠죠?
+
+또한 Assignee(작업과 실제 연관이 있는사람)를 지정하므로 실제 작업자가 누군지 알려줄 수 있고,
+
+Reviewer를 지정해 내 코드를 보고 리뷰해줄 사람도 지정하는 것이 필요합니다. (팀의 규칙에 따라서요)
+
+또한 PR 목록에서 나중에 내 PR을 편리하게 관리하기 위해 Label을 다는 것도 잊지 마세요!
+
+이런 하나하나가 모두 문서화이고 팀의 협업을 위함이니, 지금부터 연습해보는 것은 어떨까요?
+
+**3. 이외 잡다한 꿀팁**
+
+**이슈 트래킹 기능**
+Github에는 이슈 트래킹 기능이 있습니다. 무슨 말일까요?
+
+우리가 커밋 내역으로 어떤 작업에 대한 커밋을 찾고 싶을 때, 브랜치의 커밋 내역을 살피게 됩니다.
+
+이 때, 작업한 PR내용까지 궁금하다면 어떻게 접근해야할까요? 상당히 귀찮을 부분이 있는데요,
+
+이 때 바로 PR이나 이슈로 redirect될 수 있게 이슈 트래킹 기능이 있습니다.
+
+커밋 메세지나 PR 본문에 `#<이슈, PR넘버>` 로 작성하게되면 이슈 트래킹 기능을 활용할 수 있습니다.
+
+예시로 보신다면 그림처럼 `#12`, `#19` 등 번호를 붙인다면 해당 이슈나 PR로 리다이렉트 되는 링크를 만들 수 있습니다.
+
+![issue tracking example](./images/image.png)
+
+**자동 close 기능**
+
+보통 PR이 공통 브랜치에 Merge 된다면 issue도 닫아주어야 합니다. 이 때, 100번 작업하는데 100번 Merge될 때 마다 수동으로 이슈를 닫아준다고 생각해보세요. 귀찮지 않을까요?
+
+이를 위해 자동 close 기능을 사용하면 좋습니다. PR본문에 `close #<닫을 이슈넘버>`를 작성해주면, PR이 Merge(close)됨과 동시에 이슈 또한 close됩니다.
+
+`close` 이외에 여러 keyword가 있으니, [링크](https://docs.github.com/ko/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)에서 참고하세요!
