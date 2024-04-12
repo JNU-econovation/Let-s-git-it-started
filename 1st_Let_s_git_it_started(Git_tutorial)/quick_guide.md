@@ -9,7 +9,7 @@
 
 ## 참여 방법
 
-**11월 3일(금)에 수행해야하는 미션 소개입니다.**
+**4월 12일(금)에 수행해야하는 미션 소개입니다.**
 
 - 자신을 소개하는 글을 작성해서 [Pull Request](#pull-request-보내기)를 올려요! 
   - 문서 제목은 `‘본인이름.md’` 로 저장해주세요
@@ -114,7 +114,7 @@
 	<pre>git push [저장소 이름] [브랜치]</pre>
 	</div>
 	</details>
- 10. GitHub에서 본인의 repository에서 원래의 repository의 2023-2 브랜치로 Pull Request를 날립니다.
+ 10. GitHub에서 본인의 repository에서 원래의 repository의 2024-1 브랜치로 Pull Request를 날립니다.
    - 제목은 '자신의 이름(자신의 GitHub 아이디) - 자기 소개'로 해주세요.
      ex) 에코노(econo) - 자기소개
    - Pull Request 내용은 한줄로 간단하게 자신을 소개하는 내용을 담아주세요.
