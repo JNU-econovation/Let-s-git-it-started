@@ -15,3 +15,4 @@ LeeJinHyeok_prifile.md
 
 ParkMinGyu_profile.md
 
+응 머지 할 거야~
